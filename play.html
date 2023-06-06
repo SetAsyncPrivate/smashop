@@ -144,7 +144,22 @@
 		  color: #fff;
 		}
 
+        
+				.gay {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
 
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		              position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+		}
 		
     </style>
 		<script type="text/javascript" src="profile.js"></script>
@@ -165,7 +180,9 @@
                 <img id="ID3" src="load.png" alt="ID3">
             </div>
         </div>
-        
+
+				<button onclick="alert('this site is an effective way of coming out.');" class="gay">hi.......................</button>
+
         <div class="message-box">
             <p id="message">loading...</p>
         </div>
@@ -256,6 +273,8 @@
 			document.getElementById("message").innerHTML = "1 / 15"
 			ROUND = 1
 		});
+		
+		
     </script>
 </body>
 </html>

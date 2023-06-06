@@ -150,24 +150,23 @@
 </head>
 <body>
     <div id="container" class="container">
-        <h1 onclick="window.location.href = 'index.html'" >Your Profile</h1>
+        <h1 onclick="window.location.href = 'index.html'" >Shared Profile</h1>
         <div class="heading">
             <div class="item-details">
-                <div class="item-name">Your Statistics:</div>
+                <div class="item-name">Their Statistics:</div>
             </div>
         </div>
 		
 		 <div class="belowheading">
             <div class="item-details">
                 <div id="stats" class="item-description">Times Played: 10<br>Last Result: <a>Benji</a></div><br>
-				<a class="aa" onclick="localStorage.clear(); window.location.href = 'profile.html';" >Reset Profile</a> <a onclick="Share()" class="aa"> Share Profile</a>
-				<p id="sharelink"></p>
+				<p>NOTE: This page will not be updated if anything changes, and the user will have to send a new link/copy.</p>
             </div>
         </div>
 		
         <div class="heading">
             <div class="item-details">
-                <div class="item-name">Your Saved Results:</div>
+                <div class="item-name">Their Saved Results:</div>
             </div>
         </div>
     </div>
@@ -182,25 +181,30 @@
 	<script type="text/javascript" src="DATA.js"></script>
 	<script type="text/javascript" src="profile.js"></script>
     <script>
-		for (let I of Profile.Saves) {
-			ITEM = ARRAY[I]
-			console.log(I)
-			var html = '<div id="'.concat(parseInt(I)).concat('" class="database-item"><img src="'.concat(ITEM.img).concat('" alt="Item 2" class="item-image"><div class="item-details"><div class="item-name">'.concat(ITEM.Name).concat('</div><div class="item-description">'.concat(ITEM.Desc).concat('</div></div></div>'))))
-			document.getElementById("container").insertAdjacentHTML('beforeend', html);
+	
+		function getUrlVars() {
+					var vars = {};
+					var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+						vars[key] = value;
+					});
+					return vars;
+				}
+	
+		function getUrlParam(parameter, defaultvalue){
+			var urlparameter = defaultvalue;
+			if(window.location.href.indexOf(parameter) > -1){
+				urlparameter = getUrlVars()[parameter];
+			}
+			return urlparameter;
 		}
 	
-        const databaseItems = document.querySelectorAll('.database-item');
-        
-		databaseItems.forEach(item => {
-			item.addEventListener('click', () => {
-				window.location.href = "end.html?ID=".concat(parseInt(item.id));
-			});
-		});
 		
-		let Name = ARRAY[Profile.LastSave].Name
+		let URLLast = getUrlParam("l",0)
+		let URLScore = getUrlParam("s",0)
 		
-		let Content = "Times Played: " + Profile.Score + "<br>Last Result: <a href='end.html?ID=" + Profile.LastSave + "'>" + Name + "</a>"
-		console.log(Content);
+		let Name = ARRAY[URLLast].Name
+		
+		let Content = "Times Played: " + URLScore + "<br>Last Result: <a href='end.html?ID=" + URLLast + "'>" + Name + "</a>"
 		document.getElementById("stats").innerHTML = Content
 		
 		        function toggleWtfWindow() {
@@ -208,11 +212,23 @@
             wtfWindow.classList.toggle("open");
         }
 		
-		function Share() {
-			Data = Profile.Saves.toString()
-			let ShareLink = "file:///C:/Users/setas/Documents/SmashOrPass/share.html?l="+Profile.LastSave+"&s="+Profile.Score+"&d="+Data
-			document.getElementById("sharelink").innerHTML = ShareLink
+		
+		
+		let DATA = getUrlParam("d","0")
+		for(let I of DATA.split(",")) {
+			let ITEM = ARRAY[I]
+			
+			var html = '<div id="'.concat(parseInt(I)).concat('" class="database-item"><img src="'.concat(ITEM.img).concat('" alt="Item 2" class="item-image"><div class="item-details"><div class="item-name">'.concat(ITEM.Name).concat('</div><div class="item-description">'.concat(ITEM.Desc).concat('</div></div></div>'))))
+			document.getElementById("container").insertAdjacentHTML('beforeend', html);
 		}
+		
+		        const databaseItems = document.querySelectorAll('.database-item');
+        
+		databaseItems.forEach(item => {
+			item.addEventListener('click', () => {
+				window.location.href = "end.html?ID=".concat(parseInt(item.id));
+			});
+		});
 		
     </script>
 </body>

@@ -3,7 +3,7 @@
 let ProfileTemplate = {
 	"LastSave": 0,
 	"Score": 0,
-	"Saves": []
+	"Saves": [0]
 }
 
 let Profile = localStorage.getItem("Profile")

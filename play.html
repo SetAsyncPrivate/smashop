@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smash Or Pass</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ff3f63;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .images-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .image-wrapper {
+            width: calc(33.33% - 20px);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            height: 500px;
+            background-color: #ff3f63;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: 4px solid transparent;
+            position: relative;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .image-wrapper.selected {
+            border-color: transparent;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+        
+        .image-wrapper:hover {
+            transform: scale(1.05);
+        }
+        
+        .message-box {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 63, 99, 0.8);
+            border-radius: 5px;
+        }
+        
+        .message-box p {
+            margin: 0;
+            text-align: center;
+        }
+        
+        .wtf-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        
+        .wtf-window {
+            position: fixed;
+            bottom: -300px;
+            right: 20px;
+            width: 300px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border: 2px solid #ff3f63;
+            border-radius: 5px;
+            z-index: 998;
+            transition: bottom 0.3s ease;
+        }
+        
+        .wtf-window.open {
+            bottom: 100px;
+        }
+        
+        .wtf-window .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px 0 #ff3f63;
+            }
+            100% {
+                box-shadow: 0 0 20px 10px #ff3f63;
+            }
+        }
+		
+		a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
+
+
+		
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 onclick="window.location.href = 'index.html'">Smash Or Pass</h1>
+        
+        <div class="images-container">
+            <div class="image-wrapper" onclick="selectImage(this)">
+                <img id="ID1"src="load.png" alt="ID1">
+            </div>
+            <div  class="image-wrapper" onclick="selectImage(this)">
+                <img id="ID2"src="load.png" alt="ID2">
+            </div>
+            <div class="image-wrapper" onclick="selectImage(this)">
+                <img id="ID3" src="load.png" alt="ID3">
+            </div>
+        </div>
+        
+        <div class="message-box">
+            <p id="message">loading...</p>
+        </div>
+        
+        <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
+        
+        <div class="wtf-window" id="wtfWindow">
+            <span class="close" onclick="toggleWtfWindow()">X</span>
+            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a style="text-color: blue;" onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p>
+        </div>
+    </div>
+    
+	<script type="text/javascript" src="DATA.js"></script>
+    <script>
+		const CURRENTS = {
+			"ID1": false,
+			"ID2": false,
+			"ID3": false
+		}
+		let ROUND = 0
+		let DEBOUNCE = false
+        function selectImage(element) {
+			if(ROUND==0) { return }
+			if(DEBOUNCE) { return }
+			DEBOUNCE = true
+			
+			// HIGHLIGHT THE OBJECT
+            var selectedElements = document.getElementsByClassName("selected");
+            if (selectedElements.length > 0) {
+                selectedElements[0].classList.remove("selected");
+            }
+            element.classList.add("selected");
+            
+            var LOCALID = element.querySelector("img").alt;
+            document.getElementById("message").textContent = (ROUND+1).toString().concat(" / 15")
+			
+			if(ROUND==15) {
+				let Husband = CURRENTS[LOCALID]
+				window.location.href = "end.html?ID=".concat(Husband);
+			}
+			
+			console.log(LOCALID);
+			console.log(CURRENTS[LOCALID])
+			for (let i = 1; i < 4; i++) {
+				let LocalI = Math.floor(Math.random() * ((ARRAY.length)- 0) ) + 0;
+				let LocalV = ARRAY[LocalI]
+				let XID = "ID".concat(i.toString())
+				
+				if(XID!=LOCALID) {
+					document.getElementById(XID).src = LocalV
+					CURRENTS[XID] = LocalI
+				}
+			}
+			
+			ROUND = ROUND + 1
+			DEBOUNCE = false
+        }
+        
+        function toggleWtfWindow() {
+            var wtfWindow = document.getElementById("wtfWindow");
+            wtfWindow.classList.toggle("open");
+        }
+		
+
+		
+		window.addEventListener("load", (event) => {
+			// GENERATE RANDOM 3.
+			for (let i = 1; i < 4; i++) {
+				let LocalI = Math.floor(Math.random() * ((ARRAY.length)- 0) ) + 0;
+				let LocalV = ARRAY[LocalI]
+				let ID = "ID".concat(i.toString())
+				
+				document.getElementById(ID).src = LocalV
+				CURRENTS[ID] = LocalI
+			}
+			
+			// MARK AS READY.
+			document.getElementById("message").innerHTML = "1 / 15"
+			ROUND = 1
+		});
+    </script>
+</body>
+</html>

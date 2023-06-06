@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+	<script>
+		function x(y) {
+			if(y=='play') {
+				window.location.href = "play.html";
+			} else if(y=='view') {
+				alert("Coming Soon");
+			} else if(y=='dev') {
+				window.location.href = "https://www.setasync.me";
+			}
+		}
+		
+		function toggleWtfWindow() {
+            var wtfWindow = document.getElementById("wtfWindow");
+            wtfWindow.classList.toggle("open");
+        }
+		
+	</script>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            padding: 20px 0;
+        }
+        
+        .play-button,
+        .view-database-button {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .play-button:hover,
+        .view-database-button:hover {
+            background-color: #ff6183;
+        }
+        
+        .text-box {
+            margin-top: 40px;
+            padding: 20px;
+            border: 4px solid #ff3f63;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 #ff3f63;
+        }
+        
+        .text-box p {
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        .electric-blue-button {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: #03a9f4;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+			width: 100%;
+        }
+        
+        .electric-blue-button:hover {
+            background-color: #0396db;
+        }
+		
+		.wtf-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        
+        .wtf-window {
+            position: fixed;
+            bottom: -300px;
+            right: 20px;
+            width: 300px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border: 2px solid #ff3f63;
+            border-radius: 5px;
+            z-index: 998;
+            transition: bottom 0.3s ease;
+        }
+        
+        .wtf-window.open {
+            bottom: 100px;
+        }
+        
+        .wtf-window .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+		a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smash Or Pass</h1>
+        
+        <button onclick="x('play')" class="play-button">PLAY</button>
+        <button onclick="x('view')" class="view-database-button">VIEW DATABASE</button>
+        
+        <div class="text-box">
+            <p>Welcome to SmashOrPass.Pick from three options, and carry your choice onto the next round.<br><br>Enjoy <3~ SetAsync<br><b>(DISCLAIMED: IMAGES ARE NOT HOSTED HERE)</b>
+</p>
+        </div>
+        
+        <button onclick="x('dev')" class="electric-blue-button">DEVELOPED BY SETASYNC.ME</button>
+		
+		        <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
+        
+        <div class="wtf-window" id="wtfWindow">
+            <span class="close" onclick="toggleWtfWindow()">X</span>
+            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a style="text-color: blue;" onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p>
+        </div>
+		
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmashOrPass</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        .picture-frame {
+            display: inline-block;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        
+        .picture-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        
+        .description {
+            margin-left: 420px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            text-align: left;
+        }
+        
+        .play-again-button {
+            display: block;
+            margin-top: 20px;
+            margin-left: 420px;
+            padding: 10px 20px;
+            background-color: #ff3f63;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .play-again-button:hover {
+            background-color: #ff6183;
+        }
+		
+				.wtf-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        
+        .wtf-window {
+            position: fixed;
+            bottom: -300px;
+            right: 20px;
+            width: 300px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border: 2px solid #ff3f63;
+            border-radius: 5px;
+            z-index: 998;
+            transition: bottom 0.3s ease;
+        }
+        
+        .wtf-window.open {
+            bottom: 100px;
+        }
+        
+        .wtf-window .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+		a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
+		
+    </style>
+	
+	<script>
+				function getUrlVars() {
+					var vars = {};
+					var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+						vars[key] = value;
+					});
+					return vars;
+				}
+	
+		function getUrlParam(parameter, defaultvalue){
+			var urlparameter = defaultvalue;
+			if(window.location.href.indexOf(parameter) > -1){
+				urlparameter = getUrlVars()[parameter];
+			}
+			return urlparameter;
+		}
+	
+		function toggleWtfWindow() {
+            var wtfWindow = document.getElementById("wtfWindow");
+            wtfWindow.classList.toggle("open");
+        }
+				const ARRAY = ["https://netstorage-legit.akamaized.net/images/7ce6116fec5582e6.jpg?imwidth=900", "https://i.pinimg.com/236x/b9/c0/bf/b9c0bf57c2967ac81fa1a78dc6940bca.jpg", "https://i.pinimg.com/236x/d8/54/a0/d854a0f252c8602a98c0539d72e8a5eb.jpg", "https://i.pinimg.com/236x/e2/94/4d/e2944d849c479c6e521ca65f3dcbec31.jpg"]
+
+		window.addEventListener("load", (event) => {
+			let ID = getUrlParam("ID", "0");
+			ID = parseInt(ID);
+			
+			
+			
+			let IMAGE = ARRAY[ID]
+			document.getElementById("x").src = IMAGE
+			document.getElementById("it").href = IMAGE
+		});
+	</script>
+	
+</head>
+<body>
+    <div class="container">
+        <h1>Your Result</h1>
+        <div class="picture-frame">
+            <img id="x" src="load.png" alt="Picture">
+        </div>
+        <div class="description">
+            <p>After 15 different choices and options, you've made this choice!<br>Are they worth it?</p>
+        </div>
+		<a href="index.html" class="play-again-button">Back Home</a>
+        <a href="play.html" class="play-again-button">Play Again</a>
+		<a id="it" class="play-again-button">View Smash</a>
+		
+				        <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
+        
+        <div class="wtf-window" id="wtfWindow">
+            <span class="close" onclick="toggleWtfWindow()">X</span>
+            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a style="text-color: blue;" onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -159,9 +159,13 @@
 			
 			
 			
-			let IMAGE = ARRAY[ID]
-			document.getElementById("x").src = IMAGE
-			document.getElementById("it").href = IMAGE
+			let GUY = ARRAY[ID]
+			document.getElementById("x").src = GUY["img"]
+			document.getElementById("it").href = GUY["img"]
+			document.getElementById("song").src = "https://open.spotify.com/embed/track/".concat(GUY["Song"]).concat("?utm_source=generator")
+			
+			document.getElementById("hisname").innerHTML = GUY["Name"]
+			document.getElementById("abouthim").innerHTML = GUY["Desc"]
 		});
 	</script>
 	
@@ -173,8 +177,11 @@
             <img id="x" src="load.png" alt="Picture">
         </div>
         <div class="description">
-            <p>After 15 different choices and options, you've made this choice!<br>Are they worth it?</p>
-        </div>
+            <p>After 15 different choices and options, you've made this choice!<br>Are they worth it?</p><b>His favorite song:</b>
+        <iframe id="song" style="border-radius:12px" src="https://open.spotify.com/embed/track/7DbdUf8aHSYoliSjO6LZv6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		<b>His Name: </b><p id="hisname">Loading...</p>
+		<b>About Him: </b><p id="abouthim">Loading...</p>
+		</div>
 		<a href="index.html" class="play-again-button">Back Home</a>
         <a href="play.html" class="play-again-button">Play Again</a>
 		<a id="it" class="play-again-button">View Smash</a>

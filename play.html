@@ -212,8 +212,9 @@
 				let LocalV = ARRAY[LocalI]
 				let XID = "ID".concat(i.toString())
 				
+				console.log(LocalV)
 				if(XID!=LOCALID) {
-					document.getElementById(XID).src = LocalV
+					document.getElementById(XID).src = LocalV["img"]
 					CURRENTS[XID] = LocalI
 				}
 			}
@@ -236,7 +237,7 @@
 				let LocalV = ARRAY[LocalI]
 				let ID = "ID".concat(i.toString())
 				
-				document.getElementById(ID).src = LocalV
+				document.getElementById(ID).src = LocalV["img"]
 				CURRENTS[ID] = LocalI
 			}
 			

@@ -457,7 +457,7 @@ const ARRAY = [
     },
 	{
 		"Name": "Mr Adnan",
-		"Desc": "Very wise man, and someone's dad.",
+		"Desc": "Very wise man, and someone's dad.\n<br><a href='https://youtu.be/iYSNYKLgwR8'>His other song</a>",
 		"Song": "0cGG2EouYCEEC3xfa0tDFV",
 		"img": "https://cdn.discordapp.com/attachments/723089422530117632/1115419762260983890/Screenshot_20230606_001925_Photos.jpg"
 	}

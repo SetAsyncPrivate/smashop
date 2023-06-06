@@ -147,6 +147,8 @@
 
 		
     </style>
+		<script type="text/javascript" src="profile.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -203,6 +205,10 @@
 			if(ROUND==15) {
 				let Husband = CURRENTS[LOCALID]
 				window.location.href = "end.html?ID=".concat(Husband);
+				Profile.Score = Profile.Score + 1
+				Profile.LastSave = Husband
+				localStorage.setItem("Profile", JSON.stringify(Profile))
+				return
 			}
 			
 			console.log(LOCALID);

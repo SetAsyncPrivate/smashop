@@ -7,9 +7,11 @@
 			if(y=='play') {
 				window.location.href = "play.html";
 			} else if(y=='view') {
-				alert("Coming Soon");
+				window.location.href = "list.html";
 			} else if(y=='dev') {
 				window.location.href = "https://www.setasync.me";
+			} else if(y=='profile') {
+				window.location.href = "profile.html";
 			}
 		}
 		
@@ -153,13 +155,16 @@
 		}
     </style>
 </head>
+	<script type="text/javascript" src="profile.js"></script>
+
 <body>
     <div class="container">
         <h1>Smash Or Pass</h1>
         
         <button onclick="x('play')" class="play-button">PLAY</button>
         <button onclick="x('view')" class="view-database-button">VIEW DATABASE</button>
-        
+        <button onclick="x('profile')" class="view-database-button">YOUR PROFILE</button>
+		
         <div class="text-box">
             <p>Welcome to SmashOrPass.Pick from three options, and carry your choice onto the next round.<br><br>Enjoy <3~ SetAsync<br><b>(DISCLAIMED: IMAGES ARE NOT HOSTED HERE)</b>
 </p>

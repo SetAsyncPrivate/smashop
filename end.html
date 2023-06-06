@@ -128,6 +128,24 @@
 		  color: #fff;
 		}
 		
+		.electric-blue-button {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: #03a9f4;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+			width: 100%;
+        }
+        
+        .electric-blue-button:hover {
+            background-color: #0396db;
+        }
+		
     </style>
 		<script type="text/javascript" src="DATA.js"></script>
 
@@ -166,9 +184,12 @@
 			
 			document.getElementById("hisname").innerHTML = GUY["Name"]
 			document.getElementById("abouthim").innerHTML = GUY["Desc"]
+			
+
 		});
 	</script>
-	
+		<script type="text/javascript" src="profile.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -185,7 +206,7 @@
 		<a href="index.html" class="play-again-button">Back Home</a>
         <a href="play.html" class="play-again-button">Play Again</a>
 		<a id="it" class="play-again-button">View Smash</a>
-		
+		<button id="save" onclick="save()" class="electric-blue-button">ADD RESULT TO YOUR SAVED</button>
 				        <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
         
         <div class="wtf-window" id="wtfWindow">
@@ -193,5 +214,69 @@
             <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a style="text-color: blue;" onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p>
         </div>
     </div>
+	<script>
+
+			
+		function getUrlVars() {
+					var vars = {};
+					var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+						vars[key] = value;
+					});
+					return vars;
+				}
+	
+		function getUrlParam(parameter, defaultvalue){
+			var urlparameter = defaultvalue;
+			if(window.location.href.indexOf(parameter) > -1){
+				urlparameter = getUrlVars()[parameter];
+			}
+			return urlparameter;
+		}
+	
+		function toggleWtfWindow() {
+            var wtfWindow = document.getElementById("wtfWindow");
+            wtfWindow.classList.toggle("open");
+        }
+
+
+			
+
+			
+			// save system
+			
+			
+		let ID = getUrlParam("ID", "0");
+		ID = parseInt(ID);
+		let AddSave = true
+		let SavedPosition = 0
+		let ActualPos = 0
+		for(let SavedItem of Profile.Saves) {
+			if(SavedItem==ID) {
+				AddSave = false
+				ActualPos = SavedPosition
+			}
+			SavedPosition = SavedPosition + 1
+		}
+
+			
+		function save() {
+			if(AddSave) {
+				Profile.Saves.push(ID)
+				localStorage.setItem("Profile", JSON.stringify(Profile))
+				window.location.href = "profile.html"
+			} else {
+				Profile.Saves.splice(ActualPos, 1)
+
+				localStorage.setItem("Profile", JSON.stringify(Profile))
+				window.location.href = "end.html?ID="+ID
+			}
+		}
+			
+		if(AddSave) {
+			document.getElementById("save").innerHTML = "ADD RESULT TO YOUR SAVED"
+		} else {
+			document.getElementById("save").innerHTML = "REMOVE RESULT FROM YOUR SAVED"
+		}
+	</script>
 </body>
 </html>

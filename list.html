@@ -63,12 +63,30 @@
             font-size: 14px;
             color: rgba(255, 255, 255, 0.8);
         }
+		
+						a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+		  background-color: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
     </style>
 </head>
 <body>
     <div id="container" class="container">
         <h1 onclick="window.location.href = 'index.html'" >View Database</h1>
-
+	<a onclick="window.location.href='gallery.html';">Switch to gallery view...</a><br><br>
     </div>
 	<script type="text/javascript" src="DATA.js"></script>
     <script>

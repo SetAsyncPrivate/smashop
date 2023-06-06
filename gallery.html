@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery Page</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            text-align: center;
+        }
+        
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+		}
+
+		.gallery-item {
+			background-color: #ff3f63;
+			border-radius: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.item-image {
+			width: 100%;
+			height: 400px; /* Adjust the height as needed */
+			object-fit: cover;
+			object-position: top;
+		}
+
+        .item-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .item-text {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+		
+						a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+        .gallery-item:hover {
+            background-color: #ff6183;
+					  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+        }
+		
+		.gallery-item:hover {
+		  background-color: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+			border-radius: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 onclick="window.location.href='index.html';">Gallery</h1>
+		<a onclick="window.location.href='list.html';">Switch to list view...</a><br><br>
+
+        <div id="container" class="gallery">
+
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+		<script type="text/javascript" src="DATA.js"></script>
+
+	<script>
+		let I = 0
+		for (let ITEM of ARRAY) {
+			var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div class="item-text">'+ITEM.Desc+'</div></div>'
+			document.getElementById("container").insertAdjacentHTML('beforeend', html);
+			I = I + 1
+		}
+	
+        const databaseItems = document.querySelectorAll('.gallery-item');
+        
+		databaseItems.forEach(item => {
+			item.addEventListener('click', () => {
+				window.location.href = "end.html?ID=".concat(parseInt(item.id));
+			});
+		});
+	</script>
+</body>
+</html>

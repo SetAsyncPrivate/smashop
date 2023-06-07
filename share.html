@@ -150,7 +150,7 @@
 </head>
 <body>
     <div id="container" class="container">
-        <h1 onclick="window.location.href = 'index.html'" >Shared Profile</h1>
+        <h1 id="title" onclick="window.location.href = 'index.html'" >Shared Profile</h1>
         <div class="heading">
             <div class="item-details">
                 <div class="item-name">Their Statistics:</div>
@@ -229,6 +229,11 @@
 				window.location.href = "end.html?ID=".concat(parseInt(item.id));
 			});
 		});
+		
+		let TITLE = getUrlParam("t","Shared Profile").replace("_"," ")
+		if(TITLE) {
+			document.getElementById("title").innerHTML = TITLE
+		}
 		
     </script>
 </body>

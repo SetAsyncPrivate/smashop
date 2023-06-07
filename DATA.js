@@ -28,6 +28,7 @@ const ARRAY = [
         "Desc": "The way he's holding that phone....",
         "Song": "2takcwOaAZWiXQijPHIx7B",
         "img": "https://i.pinimg.com/236x/16/d4/c4/16d4c412157dd0ab622df0f615b1f802.jpg",
+		"DevTop": true
     },
     {
         "Name": "Nick",
@@ -112,6 +113,7 @@ const ARRAY = [
         "Desc": "Many different personalities, all of them amazing.",
         "Song": "1djCoU5rvnq2zXFyD2iqq4",
         "img": "https://i.pinimg.com/236x/3e/4b/62/3e4b62ad20abbf496cc93efeae40b0fb.jpg",
+		"DevTop": true
     },
     {
         "Name": "Nathan",
@@ -124,24 +126,28 @@ const ARRAY = [
         "Desc": "UwU face?<br>2016 Musically",
         "Song": "0qOnSQQF0yzuPWsXrQ9paz",
         "img": "https://i.pinimg.com/236x/67/85/34/678534f3340ec2a9428ee3759b5db923.jpg",
+		"DevTop": true
     },
     {
         "Name": "Benj Krol (but cat)",
         "Desc": "Benji Krol (but cat)<br>Nothing to add..<br><small>MARRYME</small>",
         "Song": "1owGm6QDclYTJ40SMz97rW",
         "img": "https://i.pinimg.com/236x/8f/56/79/8f5679c549c7dc7fcedc9f1756127edf.jpg",
+		"DevTop": true
     },
     {
         "Name": "Benji Krol (but maid)",
         "Desc": "wowowowowowowowowowowowowowo",
         "Song": "60jQTAr2OkFcV4SWSRz3st",
         "img": "https://i.pinimg.com/236x/2c/76/1c/2c761c25cd132e9b6dbed640d1312597.jpg",
+		"DevTop": true
     },
     {
         "Name": "Benji Krol",
         "Desc": "The nail varnish really makes a statement",
         "Song": "1Qrg8KqiBpW07V7PNxwwwL",
         "img": "https://i.pinimg.com/236x/b1/47/f5/b147f5881552c531c0e0ea2e54ebb858.jpg",
+		"DevTop": true
     },
     {
         "Name": "Xander",
@@ -226,6 +232,7 @@ const ARRAY = [
         "Desc": "wow<br>'Under love's heavy burden do I sink'<br>Amazing",
         "Song": "6Dy1jexKYriXAVG6evyUTJ",
         "img": "https://i.pinimg.com/236x/ac/60/0e/ac600ec3405240b465af707a21443dea.jpg",
+		"DevTop": true
     },
     {
         "Name": "Chad",
@@ -246,213 +253,217 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/8c/11/ae/8c11aeb14aa1581acd4552a78f218679.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Chris",
+        "Desc": "Already a ring on the finger.",
+        "Song": "0u2P5u6lvoDfwTYjAADbn4",
         "img": "https://i.pinimg.com/236x/01/33/3c/01333c9ffa495ae06f30fe240af98784.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Asher",
+        "Desc": "(Pool table not included.)",
+        "Song": "5NvOZCjZaGGGL597exlQWv",
         "img": "https://i.pinimg.com/236x/4e/0c/d6/4e0cd65157e9d43de9bed2cafef03083.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Leo",
+        "Desc": "Is that a car?",
+        "Song": "4EuEFylz00BvZhpf6w7qYf",
         "img": "https://i.pinimg.com/236x/3f/44/6c/3f446c770209af3f2cfec9c4b8ae15be.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Chase",
+        "Desc": "Looks serious...",
+        "Song": "3GfOAdcoc3X5GPiiXmpBjK",
         "img": "https://i.pinimg.com/236x/05/b8/4b/05b84b57e25fff526357b166ae1298a5.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Dexter",
+        "Desc": "Part emo?",
+        "Song": "7j31rVgGX9Q2blT92VBEA0",
         "img": "https://i.pinimg.com/236x/6d/78/f9/6d78f975974705c5599a9bd08affa7cb.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Harry",
+        "Desc": "Olivia stan",
+        "Song": "4ZtFanR9U6ndgddUvNcjcG",
         "img": "https://i.pinimg.com/236x/dd/0c/3e/dd0c3ec62774686e7fa065e7d60b7a5f.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Cody",
+        "Desc": "<b>DAMM.</b>",
+        "Song": "6SRsiMl7w1USE4mFqrOhHC",
         "img": "https://i.pinimg.com/236x/80/29/a3/8029a3f267beaf2b2fe2d1760eb14abd.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Rick",
+        "Desc": "Calvin Clein Rep<br>Unexpected phonk fan?",
+        "Song": "1HWmTAw6BrGBrr1NGSDy9C",
         "img": "https://i.pinimg.com/236x/f5/88/b7/f588b7c2c519adeeaba04306c0a09ce9.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Matt",
+        "Desc": "He's singing taylor rn",
+        "Song": "0V3wPSX9ygBnCm8psDIegu",
         "img": "https://i.pinimg.com/236x/b0/d3/03/b0d30364114e646902c5527d2052d911.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Dan",
+        "Desc": "He's '#4d2c1b' not ginger! <b><p style='color: #4d2c1b;'>(This)</p></b>",
+        "Song": "1D4PL9B8gOg78jiHg3FvBb",
         "img": "https://i.pinimg.com/236x/50/99/84/509984174bae47c063295f1d2432bacb.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Finn",
+        "Desc": "Why's he looking down...",
+        "Song": "2AT8iROs4FQueDv2c8q2KE",
         "img": "https://i.pinimg.com/236x/92/d6/25/92d62584b5f0d6838181e7327538d5fc.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Isaac",
+        "Desc": "Would be better without the distorted lighting, but:<h3>WOW</h3>",
+        "Song": "2g1KggY9PKvsoEAOaiz4xx",
         "img": "https://i.pinimg.com/236x/31/f1/c1/31f1c19252f713654ab6b96046a31f4c.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Tristan",
+        "Desc": "Greek god.",
+        "Song": "4GRFzKI7jTZ3kbMfouc7bn",
         "img": "https://i.pinimg.com/564x/d3/41/68/d34168278e74f6931c92788697b5a4de.jpg",
+				"DevTop": true
+
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Brice",
+        "Desc": "Surfer Boy >>",
+        "Song": "0BO6iWcPj20UGEl224pHWA",
         "img": "https://i.pinimg.com/236x/42/60/1d/42601d3aa914fa202bb56560fea7d858.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
+        "Name": "Chad",
+        "Desc": "Love the tatto",
         "Song": "7DbdUf8aHSYoliSjO6LZv6",
         "img": "https://i.pinimg.com/236x/1e/fd/f1/1efdf166e23896d18d347cf9fae68dc0.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Oliver",
+        "Desc": "Moonlight Sonata",
+        "Song": "6Im9k8u9iIzKMrmV7BWtlF",
         "img": "https://i.pinimg.com/236x/11/9e/68/119e686857e87f344358b57c4eca409c.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Tommy",
+        "Desc": "Strong drinker",
+        "Song": "3sqrvkNC6IPTIXvvbx9Arw",
         "img": "https://i.pinimg.com/236x/59/51/be/5951bef7bc48b47ba4be63df1cde0416.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Riley",
+        "Desc": "Sorta roadman",
+        "Song": "01kfSdF9zfcDLri5sSWEoL",
         "img": "https://i.pinimg.com/236x/31/ef/56/31ef56cb7aaa3e310e08e2d59f2db870.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Ollie",
+        "Desc": "I just took a DNA test turns out",
+        "Song": "3HWzoMvoF3TQfYg4UPszDq",
         "img": "https://i.pinimg.com/474x/fe/ac/28/feac28835e4757cbac1c6bb3e583fcc2.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Mike",
+        "Desc": "Football Player",
+        "Song": "6YdQgWSpsxhVeX6Xmv3IFJ",
         "img": "https://i.pinimg.com/236x/ad/52/5b/ad525b176088f51d3e2300da32775fa2.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Taylor",
+        "Desc": "Damm<br>Doesn't even look like a mirror.",
+        "Song": "6maTPqynTmrkWIralgGaoP",
         "img": "https://i.pinimg.com/236x/1e/3a/82/1e3a82951a9691fd30b69c834f86742d.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Travis",
+        "Desc": "'Did you ever feel me? Would you ever picture us?'",
+        "Song": "6AQbmUe0Qwf5PZnt4HmTXv",
         "img": "https://i.pinimg.com/236x/92/12/f4/9212f4a18b87f658ce6635483c215b48.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Tanner",
+        "Desc": "Questionable...",
+        "Song": "1Qrg8KqiBpW07V7PNxwwwL",
         "img": "https://i.pinimg.com/236x/2f/98/8a/2f988a2d5f76fa80d7a9fbef64b0b304.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Connor",
+        "Desc": "'i met him at the bar it was 12 or something'",
+        "Song": "5mHdCZtVyb4DcJw8799hZp",
         "img": "https://i.pinimg.com/236x/49/df/e8/49dfe84c83ff976a16f1b0ea959029d2.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Charlie",
+        "Desc": "Could look normal sitting on a random wooden chair in the middle of any alleyway.",
+        "Song": "2r7BOWS3bEYjEUbLiH8kVM",
         "img": "https://i.pinimg.com/474x/96/5e/09/965e0915cecb8699950bf7c459a6b0bd.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Dwayne",
+        "Desc": "Hard working guy",
+        "Song": "5vOWdyk23iqRryEmbNCrCp",
         "img": "https://i.pinimg.com/236x/55/b5/54/55b5540a5462c9047d4c2900ae60d2b0.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Jake",
+        "Desc": "Unknown Identity..?",
+        "Song": "7i9763l5SSfOnqZ35VOcfy",
         "img": "https://i.pinimg.com/236x/70/84/5c/70845c2f808c348ab278e67a2ee43518.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Elliott",
+        "Desc": "Straight out of a Netflix series.",
+        "Song": "6HgWWaMu31KdOpEG5l28BG",
         "img": "https://i.pinimg.com/236x/d1/aa/d7/d1aad7b841d5f754c638f94be86b4e63.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Jesse",
+        "Desc": "The bus is waiting for him, not the other way around.",
+        "Song": "6BePGk3eCan4FqaW2X8Qy3",
         "img": "https://i.pinimg.com/236x/c7/72/40/c772404322bff6e4e8ffecf7b95d6768.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Kyle",
+        "Desc": "He's clearly ready for something...",
+        "Song": "6UN73IYd0hZxLi8wFPMQij",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6X7nR10vBuvXKVWm7-o-hH1mJaEGXDL_Cxg&usqp=CAU",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Conan",
+        "Desc": "<h3><b>Wow</b></h3>'All my fortunes at thy foot I'll lay, and follow thee my lord throughout the world.'<br>100% The best option",
+        "Song": "7KJXiuMXQu723ODChoxENp",
         "img": "https://i.pinimg.com/736x/f3/98/7d/f3987daa4b6ea166eb0259623db6922a.jpg",
+		"DevTop": true
+
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Evan",
+        "Desc": "Going for a swim",
+        "Song": "5eTaQYBE1yrActixMAeLcZ",
         "img": "https://i.pinimg.com/originals/12/c7/3c/12c73ce521e8d4e9df4d68168923b746.png",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Keanu",
+        "Desc": "'Where your clothes at?'",
+        "Song": "0rKtyWc8bvkriBthvHKY8d",
         "img": "https://i.pinimg.com/originals/46/cd/90/46cd90b0e63c40a321f4f9181bc1da17.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Khalil",
+        "Desc": "Looks like an olympic swimmer.",
+        "Song": "7umZiitjVsEjMQ6HNddpUI",
         "img": "https://i.pinimg.com/736x/06/0e/ca/060ecafabdbebef0af6653bb1a2d1815--trunks-moment.jpg",
     },
     {
-        "Name": "idk",
-        "Desc": "N/A",
-        "Song": "7DbdUf8aHSYoliSjO6LZv6",
+        "Name": "Logan",
+        "Desc": "Head of the football team.",
+        "Song": "5EV4bGHxVN0kHpcAFvgnTt",
         "img": "https://pbs.twimg.com/media/FUfdUKqXwAMFJIP.jpg",
     },
 	{
@@ -460,5 +471,102 @@ const ARRAY = [
 		"Desc": "Very wise man, and someone's dad.\n<br><a href='https://youtu.be/iYSNYKLgwR8'>His other song</a>",
 		"Song": "0cGG2EouYCEEC3xfa0tDFV",
 		"img": "https://cdn.discordapp.com/attachments/723089422530117632/1115419762260983890/Screenshot_20230606_001925_Photos.jpg"
+	},
+	
+	// Am's Contribution
+	{
+		"Name": "Gerard Way",
+		"Desc": "lead singer and creator of american rock band 'My Chemical Romance'",
+		"Song": "7lRlq939cDG4SzWOF4VAnd",
+		"img": "https://i.pinimg.com/564x/dd/aa/be/ddaabed26ef102508dd90db85cdf8866.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Chris",
+		"Desc": "Dressed to go out",
+		"Song": "0cGG2EouYCEEC3xfa0tDFV",
+		"img": "https://i.pinimg.com/474x/fc/b8/a0/fcb8a0478f36ef9db91947b4780233ff.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Shah Rukh Khan",
+		"Desc": "Indian actor and film producer",
+		"Song": "2UXqAinFTSFA3Y0nlWPHQn",
+		"img": "https://i.pinimg.com/474x/1f/ce/9a/1fce9a456f1a9d20f48c2bf8aa1f6e15.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Bill Kaulitz",
+		"Desc": "German singer and songwriter, in band Tokio Hotel.",
+		"Song": "32Ky5QCRtwYJJXuLwoGufj",
+		"img": "https://i.pinimg.com/474x/c3/42/56/c3425665c45b0635f2eeb5f2a41da1b7.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Andy Biersack",
+		"Desc": "American singer, the founder and lead vocalist of the rock band Black Veil Brides.",
+		"Song": "2ZhswJTKMkNNTAjrTmPhOJ",
+		"img": "https://i.pinimg.com/474x/91/fb/0c/91fb0c6f485fb84fd805c97985f01b15.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Johnnie Guilbert",
+		"Desc": "American YouTuber, musician, vlogger, and actor",
+		"Song": "169VLFi45YohKwBEZyCewN",
+		"img": "https://i.pinimg.com/474x/74/4f/02/744f029d91a70e20e81926af1642eaf6.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Jake Webber",
+		"Desc": "American YouTuber, musician and vlogger",
+		"Song": "7tJUdXtpwbDU0mxw0IBBWv",
+		"img": "https://i.pinimg.com/474x/e2/5e/f1/e25ef12e36f092517297642c74839b97.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Tyson",
+		"Desc": "Godly",
+		"Song": "01kfSdF9zfcDLri5sSWEoL",
+		"img": "https://i.pinimg.com/474x/c0/44/8b/c0448b9088024ccb66ef01175412dbcf.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Gackt",
+		"Desc": "Japanese musician, singer, songwriter, record producer and actor",
+		"Song": "75Frd3MMVwG2j3eMBdZVvl",
+		"img": "https://i.pinimg.com/474x/10/7a/c1/107ac1c7f4e54077153f052317a858d5.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Johnny Depp",
+		"Desc": "American actor and is the recipient of multiple accolades",
+		"Song": "1HXchhExSIsJODlUyAXPlB",
+		"img": "https://i.pinimg.com/474x/9c/59/75/9c59754fc841f8d663f8e18c5faed645.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Frank Iero",
+		"Desc": "American musician who is the rhythm guitarist and backup vocalist of My Chemical Romance, guitarist in L.S. Dunes and lead vocalist of Leathermouth",
+		"Song": "4kXHIm097G3CemN3PzcpgL",
+		"img": "https://i.pinimg.com/474x/eb/6a/c5/eb6ac56ff988be078256b86ca536e313.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Atsushi Sakurai",
+		"Desc": "Japanese musician and singer-songwriter of the band Buck-Tick",
+		"Song": "1f6sBdxffdtzsYwJTeHWr1",
+		"img": "https://i.pinimg.com/474x/0a/a2/61/0aa26144f2fa22e92c5c8fcbb78cf2f6.jpg",
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
 	}
 ]

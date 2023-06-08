@@ -59,6 +59,8 @@ const ARRAY = [
         "Desc": "Wonder what he's looking at over there...",
         "Song": "0mr8FAnN9X70p5KRUwMIJx",
         "img": "https://i.pinimg.com/236x/7b/0d/c5/7b0dc5f0179c400fb067f61ea4449234.jpg",
+		"Actor": true,
+		"Famous": true
     },
     {
         "Name": "Harry",
@@ -83,7 +85,8 @@ const ARRAY = [
         "Desc": "A suit made for anything",
         "Song": "3lAun9V0YdTlCSIEXPvfsY",
         "img": "https://i.pinimg.com/236x/07/79/38/0779383d304307062526575fe68a3918.jpg",
-		"Famous": true
+		"Famous": true,
+		"Actor": true
     },
     {
         "Name": "Tristan",
@@ -117,7 +120,8 @@ const ARRAY = [
 		"DevTop": true,
 		"Famous": true,
 		"Model": true,
-		"Posts": [23,22,21,20,18]
+		"Posts": [23,22,21,20,18],
+		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
         "Name": "Nathan",
@@ -132,7 +136,8 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/67/85/34/678534f3340ec2a9428ee3759b5db923.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18]
+		"Posts": [23,22,21,20,18],
+		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
         "Name": "Benj Krol (but cat)",
@@ -141,7 +146,8 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/8f/56/79/8f5679c549c7dc7fcedc9f1756127edf.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18]
+		"Posts": [23,22,21,20,18],
+		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
         "Name": "Benji Krol (but maid)",
@@ -150,7 +156,8 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/2c/76/1c/2c761c25cd132e9b6dbed640d1312597.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18]
+		"Posts": [23,22,21,20,18],
+		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
         "Name": "Benji Krol",
@@ -159,7 +166,8 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/b1/47/f5/b147f5881552c531c0e0ea2e54ebb858.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18]
+		"Posts": [23,22,21,20,18],
+		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
         "Name": "Xander",
@@ -178,7 +186,8 @@ const ARRAY = [
         "Desc": "Award winning pornstar. Your mothers worst nightmare, And your fathers wet dream.",
         "Song": "5XeFesFbtLpXzIVDNQP22n",
         "img": "https://i.pinimg.com/236x/02/47/93/024793a7f8a413e07585e8d7cdb9a4e8.jpg",
-		"Famous": true
+		"Famous": true,
+		"Actor": true
     },
     {
         "Name": "Paris",
@@ -567,7 +576,9 @@ const ARRAY = [
 		"Song": "1HXchhExSIsJODlUyAXPlB",
 		"img": "https://i.pinimg.com/474x/9c/59/75/9c59754fc841f8d663f8e18c5faed645.jpg",
 		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"],
-		"Famous": true
+		"Famous": true,
+		"SocialLinks": "<a href='https://www.instagram.com/johnnydepp/'>Instagram</a> <a href='https://www.facebook.com/JohnnyDepp/'>Facebook</a> <a href='https://www.tiktok.com/@johnnydepp'>TikTok</a>",
+		"Actor": true
 	},
 	
 	{
@@ -592,7 +603,9 @@ const ARRAY = [
 		"Song": "5QGhOS4dpiSdcwuqnWzpxE",
 		"img": "https://i.pinimg.com/236x/d0/cb/e2/d0cbe2c1c23f76ee9f19a345a23c492d.jpg",
 		"Famous": true,
-		"Posts": [94]
+		"Posts": [94],
+		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
+		"Singer": true
 	},
 	
 	{
@@ -600,7 +613,9 @@ const ARRAY = [
 		"Desc": "Best known for acting 'patrick' in the amazing series Elite.",
 		"Song": "1vxw6aYJls2oq3gW0DujAo",
 		"img": "https://i.pinimg.com/236x/3e/5c/1d/3e5c1d8bc3dc748a5a942610479c4335.jpg",
-		"Famous": true
+		"Famous": true,
+		"Actor": true,
+		"SocialLinks": "<a href='https://www.instagram.com/manurios/'>Instagram</a>"
 	},
 	
 	{
@@ -630,7 +645,9 @@ const ARRAY = [
 		"Song": "0vbp3qthXlRVsLXTbPrkX1",
 		"img": "https://i.pinimg.com/564x/d9/77/23/d977230d4d16eea1fa14d674eb24b909.jpg",
 		"Posts": [89],
-		"Famous": true
+		"Famous": true,
+		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
+		"Singer": true
 	}
 	
 	

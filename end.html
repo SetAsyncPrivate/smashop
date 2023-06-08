@@ -182,6 +182,12 @@
 			
 			</div>
         </div>
+		
+		<div id="SocialLinks" class="additional-info">
+			<h2 id="hisname2">Character's Social Links:</h2>
+			<div id="sociallinksinterior">
+			</div>
+        </div>
     </div>
 <script type="text/javascript" src="profile.js"></script>
 <script type="text/javascript" src="DATA.js"></script>
@@ -243,6 +249,16 @@
 					let html = "<div style='background-color: #800080;' class='badge'>Gallery Model</div>"
 					document.getElementById("additional").insertAdjacentHTML('beforeend', html);				
 				}
+				
+				if(k=="Actor") {
+					let html = "<div style='background-color: #800080;' class='badge'>Actor</div>"
+					document.getElementById("additional").insertAdjacentHTML('beforeend', html);				
+				}
+				
+				if(k== "Singer") {
+					let html = "<div style='background-color: #FF10F0;' class='badge'>Singer</div>"
+					document.getElementById("additional").insertAdjacentHTML('beforeend', html);
+				}
 			})
 			
 			let GalleryFrame = document.getElementById("Pictures")
@@ -255,6 +271,16 @@
 				}
 			} else {
 				GalleryFrame.remove()
+			}
+			
+			// SOCIAL LINKS
+			
+			let SocialLinks = document.getElementById("SocialLinks")
+			let SLI = document.getElementById("sociallinksinterior")
+			if (GUY.SocialLinks) {
+				SLI.innerHTML = GUY.SocialLinks
+			} else {
+				SocialLinks.remove()
 			}
 
 		});

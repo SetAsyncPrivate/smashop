@@ -83,6 +83,7 @@ const ARRAY = [
         "Desc": "A suit made for anything",
         "Song": "3lAun9V0YdTlCSIEXPvfsY",
         "img": "https://i.pinimg.com/236x/07/79/38/0779383d304307062526575fe68a3918.jpg",
+		"Famous": true
     },
     {
         "Name": "Tristan",
@@ -113,7 +114,10 @@ const ARRAY = [
         "Desc": "Many different personalities, all of them amazing.",
         "Song": "1djCoU5rvnq2zXFyD2iqq4",
         "img": "https://i.pinimg.com/236x/3e/4b/62/3e4b62ad20abbf496cc93efeae40b0fb.jpg",
-		"DevTop": true
+		"DevTop": true,
+		"Famous": true,
+		"Model": true,
+		"Posts": [23,22,21,20,18]
     },
     {
         "Name": "Nathan",
@@ -126,28 +130,36 @@ const ARRAY = [
         "Desc": "UwU face?<br>2016 Musically",
         "Song": "0qOnSQQF0yzuPWsXrQ9paz",
         "img": "https://i.pinimg.com/236x/67/85/34/678534f3340ec2a9428ee3759b5db923.jpg",
-		"DevTop": true
+		"DevTop": true,
+		"Famous": true,
+		"Posts": [23,22,21,20,18]
     },
     {
         "Name": "Benj Krol (but cat)",
         "Desc": "Benji Krol (but cat)<br>Nothing to add..<br><small>MARRYME</small>",
         "Song": "1owGm6QDclYTJ40SMz97rW",
         "img": "https://i.pinimg.com/236x/8f/56/79/8f5679c549c7dc7fcedc9f1756127edf.jpg",
-		"DevTop": true
+		"DevTop": true,
+		"Famous": true,
+		"Posts": [23,22,21,20,18]
     },
     {
         "Name": "Benji Krol (but maid)",
         "Desc": "wowowowowowowowowowowowowowo",
         "Song": "60jQTAr2OkFcV4SWSRz3st",
         "img": "https://i.pinimg.com/236x/2c/76/1c/2c761c25cd132e9b6dbed640d1312597.jpg",
-		"DevTop": true
+		"DevTop": true,
+		"Famous": true,
+		"Posts": [23,22,21,20,18]
     },
     {
         "Name": "Benji Krol",
         "Desc": "The nail varnish really makes a statement",
         "Song": "1Qrg8KqiBpW07V7PNxwwwL",
         "img": "https://i.pinimg.com/236x/b1/47/f5/b147f5881552c531c0e0ea2e54ebb858.jpg",
-		"DevTop": true
+		"DevTop": true,
+		"Famous": true,
+		"Posts": [23,22,21,20,18]
     },
     {
         "Name": "Xander",
@@ -166,6 +178,7 @@ const ARRAY = [
         "Desc": "Award winning pornstar. Your mothers worst nightmare, And your fathers wet dream.",
         "Song": "5XeFesFbtLpXzIVDNQP22n",
         "img": "https://i.pinimg.com/236x/02/47/93/024793a7f8a413e07585e8d7cdb9a4e8.jpg",
+		"Famous": true
     },
     {
         "Name": "Paris",
@@ -202,6 +215,7 @@ const ARRAY = [
         "Desc": "Artist, FBI Consultant, <s>Basically a hypnotist :o</s>",
         "Song": "4svZDCRz4cJoneBpjpx8DJ",
         "img": "https://i.pinimg.com/236x/1e/03/eb/1e03eb703244cc5f4258c0f7e7eb936d.jpg",
+		"Famous": true
     },
     {
         "Name": "Felix",
@@ -251,6 +265,7 @@ const ARRAY = [
         "Desc": "'Not the kind of person who tries to be cool or trendy, definitely an individual.'",
         "Song": "4IvZLDtwBHmBmwgDIUbuwa",
         "img": "https://i.pinimg.com/236x/8c/11/ae/8c11aeb14aa1581acd4552a78f218679.jpg",
+		"Famous": true
     },
     {
         "Name": "Chris",
@@ -551,7 +566,8 @@ const ARRAY = [
 		"Desc": "American actor and is the recipient of multiple accolades",
 		"Song": "1HXchhExSIsJODlUyAXPlB",
 		"img": "https://i.pinimg.com/474x/9c/59/75/9c59754fc841f8d663f8e18c5faed645.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"],
+		"Famous": true
 	},
 	
 	{
@@ -568,5 +584,54 @@ const ARRAY = [
 		"Song": "1f6sBdxffdtzsYwJTeHWr1",
 		"img": "https://i.pinimg.com/474x/0a/a2/61/0aa26144f2fa22e92c5c8fcbb78cf2f6.jpg",
 		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+	},
+	
+	{
+		"Name": "Jann",
+		"Desc": "Polish Singer, gladiator.",
+		"Song": "5QGhOS4dpiSdcwuqnWzpxE",
+		"img": "https://i.pinimg.com/236x/d0/cb/e2/d0cbe2c1c23f76ee9f19a345a23c492d.jpg",
+		"Famous": true,
+		"Posts": [94]
+	},
+	
+	{
+		"Name": "Manu Rios",
+		"Desc": "Best known for acting 'patrick' in the amazing series Elite.",
+		"Song": "1vxw6aYJls2oq3gW0DujAo",
+		"img": "https://i.pinimg.com/236x/3e/5c/1d/3e5c1d8bc3dc748a5a942610479c4335.jpg",
+		"Famous": true
+	},
+	
+	{
+		"Name": "Saniya",
+		"Desc": "Butterflies (the earings ofc)",
+		"Song": "3kXoKlD84c6OmIcOLfrfEs",
+		"img": "https://i.pinimg.com/736x/21/82/93/218293fbbefb9781a4b87fc0fad7f40a.jpg"
+	},
+	
+	{
+		"Name": "Dayker",
+		"Desc": "Star wars fan.",
+		"Song": "0DMRKqrpd0QO4RWiEdMib0",
+		"img": "https://i.pinimg.com/236x/fa/fc/a6/fafca62e97a5804ae39118c23234f9f4.jpg"
+	},
+	
+	{
+		"Name": "Shayne",
+		"Desc": "The phone is a contrast",
+		"Song": "0DMRKqrpd0QO4RWiEdMib0",
+		"img": "https://i.pinimg.com/564x/da/8e/a8/da8ea83b7e4a066f67e5cdd08562ed06.jpg"
+	},
+	
+	{
+		"Name": "Jann",
+		"Desc": "Eurovision 2023 Contestant.",
+		"Song": "0vbp3qthXlRVsLXTbPrkX1",
+		"img": "https://i.pinimg.com/564x/d9/77/23/d977230d4d16eea1fa14d674eb24b909.jpg",
+		"Posts": [89],
+		"Famous": true
 	}
+	
+	
 ]

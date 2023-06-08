@@ -160,6 +160,19 @@
 		 <div class="belowheading">
             <div class="item-details">
                 <div id="stats" class="item-description">Times Played: 10<br>Last Result: <a>Benji</a></div><br>
+            </div>
+        </div>
+		
+		<div class="heading">
+            <div class="item-details">
+                <div class="item-name">Your Settings:</div>
+            </div>
+        </div>
+		
+				 <div class="belowheading">
+            <div class="item-details">
+				<p><p value="15">Rounds: </p><input id="Rounds" value="15" type="number"></input></p>
+				<a onclick="saveChanges()" class="aa">Apply Changes</a><br><br>
 				<a class="aa" onclick="localStorage.clear(); window.location.href = 'profile.html';" >Reset Profile</a> <a onclick="Share()" class="aa"> Share Profile</a>
 				<p id="sharelink"></p>
             </div>
@@ -213,6 +226,19 @@
 			let ShareLink = "https://setasyncprivate.github.io/smashop/share.html?l="+Profile.LastSave+"&s="+Profile.Score+"&d="+Data
 			document.getElementById("sharelink").innerHTML = ShareLink
 		}
+		
+		function saveChanges() {
+			let Rounds = document.getElementById("Rounds").value
+			if(Rounds) {
+				Profile.Rounds = Rounds;
+				console.log();
+				localStorage.setItem("Profile_2", JSON.stringify(Profile))
+				window.location.href = "profile.html"
+			}
+		}
+		
+		console.log(Profile.Rounds);
+		document.getElementById("Rounds").value = Profile.Rounds;
 		
     </script>
 </body>

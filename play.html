@@ -217,9 +217,9 @@
             element.classList.add("selected");
             
             var LOCALID = element.querySelector("img").alt;
-            document.getElementById("message").textContent = (ROUND+1).toString().concat(" / 15")
+            document.getElementById("message").textContent = (ROUND+1).toString().concat(" / "+Profile.Rounds)
 			
-			if(ROUND==15) {
+			if(ROUND==Profile.Rounds) {
 				let Husband = CURRENTS[LOCALID]
 				window.location.href = "end.html?ID=".concat(Husband);
 				Profile.Score = Profile.Score + 1
@@ -270,7 +270,7 @@
 			}
 			
 			// MARK AS READY.
-			document.getElementById("message").innerHTML = "1 / 15"
+			document.getElementById("message").innerHTML = "1 / "+Profile.Rounds
 			ROUND = 1
 		});
 		

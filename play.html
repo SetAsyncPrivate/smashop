@@ -66,11 +66,18 @@
         
         .message-box {
             width: 100%;
-            padding: 20px;
+            padding: 20px 0px;
             background-color: rgba(255, 63, 99, 0.8);
             border-radius: 5px;
         }
-        
+       
+		.song {
+            width: 100%;
+            padding: 20px 0px;
+            border-radius: 5px;
+            background-color: #fff;
+		}
+	   
         .message-box p {
             margin: 0;
             text-align: center;
@@ -187,6 +194,11 @@
             <p id="message">loading...</p>
         </div>
         
+		<br><br>
+		<div class="song">
+            <h1 id="song">Click a person to start.</h1>
+        </div>
+		
         <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
         
         <div class="wtf-window" id="wtfWindow">
@@ -204,8 +216,19 @@
 		}
 		let ROUND = 0
 		let DEBOUNCE = false
+		function sound() {
+			let RandomSong = Math.floor(Math.random() * ((SONGARRAY.length)- 0) ) + 0;
+			RandomSong = SONGARRAY[RandomSong]
+			var audio = new Audio(RandomSong[1]);
+			audio.play();
+			
+			document.getElementById("song").innerHTML = RandomSong[0]
+		}
+		
+		var swoop = new Audio('swoop.mp3');
         function selectImage(element) {
 			if(ROUND==0) { return }
+			if(ROUND==1) { sound() }
 			if(DEBOUNCE) { return }
 			DEBOUNCE = true
 			
@@ -230,6 +253,7 @@
 			
 			console.log(LOCALID);
 			console.log(CURRENTS[LOCALID])
+					swoop.play();
 			for (let i = 1; i < 4; i++) {
 				let LocalI = Math.floor(Math.random() * ((ARRAY.length)- 0) ) + 0;
 				let LocalV = ARRAY[LocalI]

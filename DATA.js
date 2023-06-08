@@ -37,10 +37,12 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/33/ca/a3/33caa36fbe824d48d468f3174ad01f90.jpg",
     },
     {
-        "Name": "Chris",
-        "Desc": "Lawyer... accountant.. whatever floats your boat",
+        "Name": "Michael B. Jordan",
+        "Desc": "American Actor",
         "Song": "2Oo397nWzelAKMQBBIL8YI",
         "img": "https://i.pinimg.com/236x/36/07/be/3607bedc034df871eb4de34f8c881fd9.jpg",
+		"Actor": true,
+		"Famous": true
     },
     {
         "Name": "Oliver",
@@ -605,7 +607,8 @@ const ARRAY = [
 		"Famous": true,
 		"Posts": [94],
 		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
-		"Singer": true
+		"Singer": true,
+				"DevTop": true
 	},
 	
 	{
@@ -647,8 +650,15 @@ const ARRAY = [
 		"Posts": [89],
 		"Famous": true,
 		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
-		"Singer": true
+		"Singer": true,
+		"DevTop": true
 	}
 	
 	
+]
+
+let SONGARRAY = [
+["Lana Del Rey - Peppers","peppers.mp3"],
+["Streets - Doja Cat","streets.mp3"],
+["Babydoll - Ari", "babydoll.mp3"]
 ]

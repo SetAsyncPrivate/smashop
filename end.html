@@ -124,10 +124,12 @@
 		}
 		
 				.gallery-item {
-			background-color: #ff3f63;
+            background-color: #ff6183;
+					  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
 			border-radius: 10px;
 			padding: 10px;
 			text-align: center;
+			color: #ff3f63;
 		}
 
 		.item-image {
@@ -266,7 +268,7 @@
 			if(GUY.Posts) {
 				for(let I of GUY.Posts) {
 					ITEM = ARRAY[I]
-					var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div class="item-text">'+ITEM.Desc+'</div></div>'
+					var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div style="color: #ff3f63;" class="item-text">'+ITEM.Desc+'</div></div>'
 					document.getElementById("grid").insertAdjacentHTML('beforeend', html);
 				}
 			} else {

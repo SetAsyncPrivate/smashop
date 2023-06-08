@@ -7,11 +7,19 @@ let ProfileTemplate = {
 	"Rounds": 10
 }
 
-let Profile = localStorage.getItem("Profile_2")
-if(!Profile) {
+
+function createProfile() {
 	localStorage.clear()
 	localStorage.setItem("Profile_2", JSON.stringify(ProfileTemplate))
 	Profile = ProfileTemplate
+}
+
+let Profile = localStorage.getItem("Profile_2")
+if(!Profile) {
+	// CONSENT
+	if(!window.location.href.includes("consent.html")) {
+		window.location.href = "consent.html"
+	}
 } else {
 	Profile = JSON.parse(Profile)
 }

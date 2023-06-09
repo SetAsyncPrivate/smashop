@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Elements</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .element {
+            width: 33.33%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #333;
+            border: 2px solid #ff3f63;
+            border-radius: 8px;
+				margin-right: 20px; /* Add this line */
+        }
+
+
+        .element img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .element .button-container {
+            margin-top: 10px;
+        }
+
+        .unselected {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff3f63;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+		
+		.selected {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #03a9f4;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff3f63;
+            margin-top: 40px;
+        }
+				.wtf-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        
+        .wtf-window {
+            position: fixed;
+            bottom: -300px;
+            right: 20px;
+            width: 300px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border: 2px solid #ff3f63;
+            border-radius: 5px;
+            z-index: 998;
+            transition: bottom 0.3s ease;
+        }
+        
+        .wtf-window.open {
+            bottom: 100px;
+        }
+        
+        .wtf-window .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+		a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
+		
+		.gay {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		              position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+		}
+		
+		        .message-box {
+            width: 100%;
+            padding: 20px 0px;
+            background-color: rgba(255, 63, 99, 0.8);
+            border-radius: 5px;
+        }
+       
+		.song {
+            width: 100%;
+            padding: 20px 0px;
+            border-radius: 5px;
+            background-color: #fff;
+		}
+	   
+        .message-box p {
+            margin: 0;
+            text-align: center;
+        }
+		
+		.selected {
+			background-color: #FFFFFFl
+		}
+		
+		.confirmable {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+		.unconfirmable {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            background-color: #808080;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+		
+    </style>
+</head>
+<body>
+    <h1 onclick="window.location.href = 'index.html'">Smash or Pass</h1>
+    <div class="container">
+        <div class="element">
+            <img id="1" src="https://i.pinimg.com/564x/d9/77/23/d977230d4d16eea1fa14d674eb24b909.jpg" alt="Image 1">
+            <div class="button-container">
+                <button class="unselected" id="1,1" onclick="button(1,1)">Kiss</button>
+                <button class="unselected" id="1,2" onclick="button(1,2)">Shoot</button>
+                <button class="unselected" id="1,3" onclick="button(1,3)">Marry</button>
+            </div>
+        </div>
+        <div class="element">
+            <img id="2" src="https://i.pinimg.com/564x/da/8e/a8/da8ea83b7e4a066f67e5cdd08562ed06.jpg" alt="Image 2">
+            <div class="button-container">
+                <button class="unselected" id="2,1" onclick="button(2,1)">Kiss</button>
+                <button class="unselected" id="2,2" onclick="button(2,2)">Shoot</button>
+                <button class="unselected" id="2,3" onclick="button(2,3)">Marry</button>
+            </div>
+        </div>
+        <div class="element">
+            <img id="3" src="https://i.pinimg.com/564x/da/8e/a8/da8ea83b7e4a066f67e5cdd08562ed06.jpg" alt="Image 3">
+            <div class="button-container">
+                <button class="unselected" id="3,1" onclick="button(3,1)">Kiss</button>
+                <button class="unselected" id="3,2" onclick="button(3,2)">Shoot</button>
+                <button class="unselected" id="3,3" onclick="button(3,3)">Marry</button>
+            </div>
+        </div>
+		
+    </div>   
+		<button id="confirm" class="unconfirmable" onclick="confirmNext()">Next</button>
+		<div class="song">
+            <h1 id="song">Click a button to start.</h1>
+        </div>
+		
+        <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
+        
+        <div class="wtf-window" id="wtfWindow">
+            <span class="close" onclick="toggleWtfWindow()">X</span>
+            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a style="text-color: blue;" onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p><a id="rand" href="">Gimme a random man..</a>
+        </div>
+	<script type="text/javascript" src="profile.js"></script>
+	<script type="text/javascript" src="DATA.js"></script>
+	<script>
+	let ACTIVE = false
+	let ROUNDS = 1
+	let Actions = {
+		1: false, // Kiss = SECTION ID INT
+		2: false, // Shoot = SECTION ID INT
+		3: false, // Marry = SECTION ID INT
+	}
+	let CONFIRMABLE = false
+	function confirmNext() {
+		if(CONFIRMABLE) {
+			document.getElementById(Actions[1]+",1").className = "unselected"
+			document.getElementById(Actions[2]+",2").className = "unselected"
+			document.getElementById(Actions[3]+",3").className = "unselected"
+			Actions = {
+				1: false,
+				2: false,
+				3: false,
+			}
+			Round()
+			CONFIRMABLE = false
+			document.getElementById("confirm").className = "unconfirmable"
+		} else {
+			alert("Fill in all fields!");
+		}
+	}
+	function sound() {
+			let RandomSong = Math.floor(Math.random() * ((SONGARRAY.length)- 0) ) + 0;
+			RandomSong = SONGARRAY[RandomSong]
+			var audio = new Audio(RandomSong[1]);
+			audio.play();
+			
+			document.getElementById("song").innerHTML = RandomSong[0]
+	}
+	function button(Section, Action) {
+		if(!ACTIVE) { ACTIVE = true; sound() }
+		if(Actions[Action]) {
+			// Remove active action.
+			document.getElementById(""+Actions[Action]+","+Action).className = "unselected"
+		}
+		document.getElementById(""+Section+","+Action).className = "selected"
+		Actions[Action] = Section
+		
+		if (Actions[1] && Actions[2] && Actions[3]) {
+			CONFIRMABLE = true
+			document.getElementById("confirm").className = "confirmable"
+		}
+	}
+	
+	function Round() {
+		for (let i = 1; i < 4; i++) {
+			let LocalI = Math.floor(Math.random() * ((ARRAY.length)- 0) ) + 0;
+			let LocalV = ARRAY[LocalI]
+			let ID = parseInt(i)
+				
+			document.getElementById(ID).src = LocalV["img"]
+			//CURRENTS[ID] = LocalI
+		}
+	}
+	window.addEventListener("load", (event) => {
+		
+		// RANDOM MAN
+		let RandMan = Math.floor(Math.random() * ((ARRAY.length)- 0) ) + 0;
+		document.getElementById("rand").href = "end.html?ID=".concat(parseInt(RandMan))
+		
+		// GENERATE RANDOM 3.
+		Round()
+			
+		// MARK AS READY.
+		ROUNDS = 1
+	});
+		
+	function toggleWtfWindow() {
+        var wtfWindow = document.getElementById("wtfWindow");
+        wtfWindow.classList.toggle("open");
+    }
+	</script>
+</body>
+</html>

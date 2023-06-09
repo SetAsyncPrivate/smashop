@@ -7,7 +7,7 @@
 			if(y=='play') {
 				window.location.href = "play.html";
 			} else if(y=='view') {
-				window.location.href = "gallery.html";
+				window.location.href = "list.html";
 			} else if(y=='dev') {
 				window.location.href = "https://www.setasync.me";
 			} else if(y=='profile') {
@@ -181,21 +181,32 @@
         <h1>Smash Or Pass</h1>
 		<h2>- smashorpass.setasync.me -</h2>
         
-        <button onclick="x('play')" class="play-button">PLAY</button>
-        <button onclick="x('view')" class="view-database-button">VIEW PICTURES</button>
-        <button onclick="x('profile')" class="view-database-button">YOUR PROFILE</button>
+		<div class="text-box">
+			<h2>Gamemode</h2>
+			<button onclick="window.location.href = 'smashorpass.html'" class="play-button">Smash Or Pass</button>
+			<button onclick="window.location.href = 'kissmarrykill.html'" class='play-button'>Kiss Marry Kill</button> 
+			<button onclick="window.location.href = 'gallery.html'" class="play-button">Gallery / Pictures</button>
+		</div>
+		
+        <div class="text-box">
+			<h2>More Options</h2>
+		    <button onclick="x('view')" class="view-database-button">View Database</button>
+			<button onclick="x('profile')" class="view-database-button">Your Profile</button>
+		</div>
+
 		
 		<button onclick="alert('this site is an effective way of coming out.');" class="gay">hi.......................</button>
 
 		
         <div class="text-box">
-            <p>Welcome to SmashOrPass.Pick from three options, and carry your choice onto the next round.<br><br>Enjoy <3~ SetAsync<br><b>(DISCLAIMED: IMAGES ARE NOT HOSTED HERE)</b>
-</p>
+			<h2>Disclaimer</h2>
+            <p>Welcome to SmashOrPass.Pick from three options, and carry your choice onto the next round.<br><br>Enjoy <3~ SetAsync<br><b>(DISCLAIMED: IMAGES ARE NOT HOSTED HERE)</b></p>
         </div>
         
-		        <div class="text-box">
+		    <div class="text-box">
+			<h2>Developer's Note</h2>
             <p>There's a lot of hidden meaning to this site...</p>
-			<a onclick="window.location.href = 'share.html?l=0&s=0&d=4,7,17,18,71';">The Top 5</a>
+			<a style="width: 90%;" onclick="window.location.href = 'share.html?l=0&s=0&d=4,7,17,18,71&t=Top_Characters';">The Top 5</a>
 </p>
         </div>
 		

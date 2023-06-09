@@ -652,6 +652,26 @@ const ARRAY = [
 		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
 		"Singer": true,
 		"DevTop": true
+	},
+	
+	{
+		"Name": "Luke Newton",
+		"Desc": "'Hottest actor in the lodge'",
+		"Song": "4GF00uRxC4ECrxNEbnapqf",
+		"img": "https://i.pinimg.com/564x/25/89/e9/2589e96163f65822eddfd100a60b51e5.jpg",
+		"Author": ["Fambuild"],
+		"Actor": true,
+		"Famous": true
+	},
+	
+	{
+		"Name": "Louis Tomlinson",
+		"Desc": "He rose to fame as a member of the boy band One Direction.",
+		"Song": "7F9vK8hNFMml4GtHsaXui6",
+		"img": "https://i.pinimg.com/564x/cb/62/8b/cb628bcca783404580362815e7908be7.jpg",
+		"Author": ["Fambuild"],
+		"Famous": true,
+		"Singer": true
 	}
 	
 	

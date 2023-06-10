@@ -230,12 +230,15 @@
 			document.getElementById("hisname2").innerHTML = "More about "+GUY["Name"]+":"
 			document.getElementById("abouthim").innerHTML = "- "+GUY["Desc"]
 			
+			// AUTHOR BADGE
+			let LocalAuthor = GUY.Author || "SetAsync"
+			let AuthorURL = "author.html?a="+LocalAuthor
+
+			let HTML = "<div onclick='window.location.href=\""+AuthorURL+"\"' class='badge'>Added by "+LocalAuthor+"</div>"
+			document.getElementById("additional").insertAdjacentHTML('beforeend', HTML);
 			// METAINFO
 			Object.entries(GUY).forEach(([k,v]) => {
-				if(k == "Author") {
-					let html = "<div onclick='window.location.href=\""+v[1]+"\"' class='badge'>Added by "+v[0]+"</div>"
-					document.getElementById("additional").insertAdjacentHTML('beforeend', html);
-				}
+
 				
 				if(k == "Famous") {
 					let html = "<div style='background-color: #A7C7E7;' class='badge'>Public Figure</div>"

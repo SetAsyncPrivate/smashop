@@ -505,7 +505,7 @@ const ARRAY = [
 		"Desc": "lead singer and creator of american rock band 'My Chemical Romance'",
 		"Song": "7lRlq939cDG4SzWOF4VAnd",
 		"img": "https://i.pinimg.com/564x/dd/aa/be/ddaabed26ef102508dd90db85cdf8866.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake",
 	},
 	
 	{
@@ -513,7 +513,7 @@ const ARRAY = [
 		"Desc": "Dressed to go out",
 		"Song": "0cGG2EouYCEEC3xfa0tDFV",
 		"img": "https://i.pinimg.com/474x/fc/b8/a0/fcb8a0478f36ef9db91947b4780233ff.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake",
 	},
 	
 	{
@@ -521,15 +521,15 @@ const ARRAY = [
 		"Desc": "Indian actor and film producer",
 		"Song": "2UXqAinFTSFA3Y0nlWPHQn",
 		"img": "https://i.pinimg.com/474x/1f/ce/9a/1fce9a456f1a9d20f48c2bf8aa1f6e15.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
-	},
-	
+		"Author": "Pancake"
+    },
+
 	{
 		"Name": "Bill Kaulitz",
 		"Desc": "German singer and songwriter, in band Tokio Hotel.",
 		"Song": "32Ky5QCRtwYJJXuLwoGufj",
 		"img": "https://i.pinimg.com/474x/c3/42/56/c3425665c45b0635f2eeb5f2a41da1b7.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -537,7 +537,7 @@ const ARRAY = [
 		"Desc": "American singer, the founder and lead vocalist of the rock band Black Veil Brides.",
 		"Song": "2ZhswJTKMkNNTAjrTmPhOJ",
 		"img": "https://i.pinimg.com/474x/91/fb/0c/91fb0c6f485fb84fd805c97985f01b15.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -545,7 +545,7 @@ const ARRAY = [
 		"Desc": "American YouTuber, musician, vlogger, and actor",
 		"Song": "169VLFi45YohKwBEZyCewN",
 		"img": "https://i.pinimg.com/474x/74/4f/02/744f029d91a70e20e81926af1642eaf6.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -553,7 +553,7 @@ const ARRAY = [
 		"Desc": "American YouTuber, musician and vlogger",
 		"Song": "7tJUdXtpwbDU0mxw0IBBWv",
 		"img": "https://i.pinimg.com/474x/e2/5e/f1/e25ef12e36f092517297642c74839b97.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -561,7 +561,7 @@ const ARRAY = [
 		"Desc": "Godly",
 		"Song": "01kfSdF9zfcDLri5sSWEoL",
 		"img": "https://i.pinimg.com/474x/c0/44/8b/c0448b9088024ccb66ef01175412dbcf.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -569,7 +569,7 @@ const ARRAY = [
 		"Desc": "Japanese musician, singer, songwriter, record producer and actor",
 		"Song": "75Frd3MMVwG2j3eMBdZVvl",
 		"img": "https://i.pinimg.com/474x/10/7a/c1/107ac1c7f4e54077153f052317a858d5.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -577,7 +577,7 @@ const ARRAY = [
 		"Desc": "American actor and is the recipient of multiple accolades",
 		"Song": "1HXchhExSIsJODlUyAXPlB",
 		"img": "https://i.pinimg.com/474x/9c/59/75/9c59754fc841f8d663f8e18c5faed645.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"],
+		"Author": "Pancake",
 		"Famous": true,
 		"SocialLinks": "<a href='https://www.instagram.com/johnnydepp/'>Instagram</a> <a href='https://www.facebook.com/JohnnyDepp/'>Facebook</a> <a href='https://www.tiktok.com/@johnnydepp'>TikTok</a>",
 		"Actor": true
@@ -588,7 +588,7 @@ const ARRAY = [
 		"Desc": "American musician who is the rhythm guitarist and backup vocalist of My Chemical Romance, guitarist in L.S. Dunes and lead vocalist of Leathermouth",
 		"Song": "4kXHIm097G3CemN3PzcpgL",
 		"img": "https://i.pinimg.com/474x/eb/6a/c5/eb6ac56ff988be078256b86ca536e313.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{
@@ -659,7 +659,7 @@ const ARRAY = [
 		"Desc": "'Hottest actor in the lodge'",
 		"Song": "4GF00uRxC4ECrxNEbnapqf",
 		"img": "https://i.pinimg.com/564x/25/89/e9/2589e96163f65822eddfd100a60b51e5.jpg",
-		"Author": ["Fambuild"],
+		"Author": "Fambuild",
 		"Actor": true,
 		"Famous": true
 	},
@@ -669,7 +669,7 @@ const ARRAY = [
 		"Desc": "He rose to fame as a member of the boy band One Direction.",
 		"Song": "7F9vK8hNFMml4GtHsaXui6",
 		"img": "https://i.pinimg.com/564x/cb/62/8b/cb628bcca783404580362815e7908be7.jpg",
-		"Author": ["Fambuild"],
+		"Author": "Fambuild",
 		"Famous": true,
 		"Singer": true
 	},
@@ -721,3 +721,15 @@ let SONGARRAY = [
 ["Streets - Doja Cat","streets.mp3"],
 ["Babydoll - Ari", "babydoll.mp3"]
 ]
+
+let AUTHORS = {
+    "SetAsync": {
+        "About": "Creator of the site and default 'Author' of all unassigned characters."
+    },
+    "Fambuild": {
+        "About": "Got a weird attraction to louis..<br>Fambuild#2364"
+    },
+    "Pancake": {
+        "About": "Pancake#8026"
+    }
+}

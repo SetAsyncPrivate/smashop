@@ -18,7 +18,9 @@ let Profile = localStorage.getItem("Profile_2")
 if(!Profile) {
 	// CONSENT
 	if(!window.location.href.includes("consent.html")) {
-		window.location.href = "consent.html"
+		let PAGENAME = window.location.href.split("/")
+		PAGENAME = PAGENAME[PAGENAME.length-1]
+		window.location.href = "consent.html?redirect="+PAGENAME;
 	}
 } else {
 	Profile = JSON.parse(Profile)

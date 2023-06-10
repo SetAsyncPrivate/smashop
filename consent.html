@@ -183,7 +183,7 @@
        
         <div class="text-box">
 			<p>This site is a personal project. Images and audio present on this site are not hosted here, only the text and an image link to wherever it was found.</p><br><p>Use "contact@setasync.me" to request an instances removal from the site's dataset.</p><br><p>Use the button to confirm you've read and understood this disclaimer.</p>
-			<a onclick="createProfile(); window.location.href='index.html';">Accept Terms</a>
+			<a onclick="xY()">Accept Terms</a>
 		</div>
         
         </div>
@@ -196,6 +196,31 @@
             <span class="close" onclick="toggleWtfWindow()">X</span>
             <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a style="text-color: blue;" onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p>
         </div>
+
+        <script>
+            function xY() {
+                function getUrlVars() {
+                    var vars = {};
+                    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                        vars[key] = value;
+                    });
+                    return vars;
+                }
+            
+                function getUrlParam(parameter, defaultvalue){
+                    var urlparameter = defaultvalue;
+                    if(window.location.href.indexOf(parameter) > -1){
+                        urlparameter = getUrlVars()[parameter];
+                    }
+                    return urlparameter;
+                }
+
+                let redirect = getUrlParam("redirect","index.html")
+
+                createProfile();
+                window.location.href = redirect;
+            }
+        </script>
 		
     </div>
 </body>

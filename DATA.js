@@ -618,7 +618,8 @@ const ARRAY = [
 		"img": "https://i.pinimg.com/236x/3e/5c/1d/3e5c1d8bc3dc748a5a942610479c4335.jpg",
 		"Famous": true,
 		"Actor": true,
-		"SocialLinks": "<a href='https://www.instagram.com/manurios/'>Instagram</a>"
+		"SocialLinks": "<a href='https://www.instagram.com/manurios/'>Instagram</a>",
+        "Posts": [102]
 	},
 	
 	{
@@ -709,6 +710,75 @@ const ARRAY = [
         "Desc": "Hurt",
         "Song": "2vWBUC9djv6BtiGlmKiQaH",
         "img": "https://i.pinimg.com/564x/09/40/8a/09408a6b9b239251b5427a7828fcb31c.jpg"
+    },
+
+    {
+        "Name": "Manu Rios",
+        "Desc": "From 'Elite'.",
+        "Song": "1vxw6aYJls2oq3gW0DujAo",
+        "img": "https://i.pinimg.com/564x/f8/d1/20/f8d120332d1dd23b5dd8abddf3e420dd.jpg",
+		"Famous": true,
+		"Actor": true,
+		"SocialLinks": "<a href='https://www.instagram.com/manurios/'>Instagram</a>",
+        "Posts": [90]
+    },
+
+    {
+        "Name": "Chad",
+        "Desc": "God bless USA.",
+        "Song": "6etwirSInfuJrSOlogS6Sh",
+        "img": "https://i.pinimg.com/564x/f5/12/4c/f5124cb861e83a3fd9c7dc75611e67a4.jpg"
+    },
+
+    {
+        "Name": "Lean",
+        "Desc": "A man who knows what he wants.",
+        "Song": "1c5CllrZr45UBhWpIqM332",
+        "img": "https://i.pinimg.com/564x/03/da/02/03da02aced1048d02d74829a036c46b4.jpg"
+    },
+
+    {
+        "Name": "Tony",
+        "Desc": "Regular gym frequenter.",
+        "Song": "1ixbwbeBi5ufN4noUKmW5a",
+        "img": "https://i.pinimg.com/564x/aa/e8/e4/aae8e45fb09ea4ce34c11e0e78a741a5.jpg"
+    },
+
+    {
+        "Name": "Ethan Wacker",
+        "Desc": "Ethan Wacker (@ethanwacker) on TikTok",
+        "Song": "3vkQ5DAB1qQMYO4Mr9zJN6",
+        "img": "https://i.pinimg.com/564x/19/71/c2/1971c2a06c8c5999ed6dfadc92ddfb3a.jpg",
+        "SocialLinks": "<a href='https://www.tiktok.com/@ethanwacker'>TikTok</a>",
+        "Famous": true,
+    },
+
+    {
+        "Name": "Lembro",
+        "Desc": "Greek God",
+        "Song": "6I9VzXrHxO9rA9A5euc8Ak",
+        "img": "https://i.pinimg.com/750x/12/51/ba/1251ba1906de012fa5067c7026f2030e.jpg",
+    },
+
+    {
+        "Name": "Jule",
+        "Desc": "On holiday somewhere",
+        "Song": "3C0nOe05EIt1390bVABLyN",
+        "img": "https://i.pinimg.com/564x/a0/6f/ba/a06fba2bb4615bb39988dbf6e38e24b5.jpg"
+    },
+
+    {
+        "Name": "Jashlem",
+        "Desc": "Someone, somewhere.",
+        "Song": "0U10zFw4GlBacOy9VDGfGL",
+        "img": "https://i.pinimg.com/564x/5c/9c/4b/5c9c4be0de18fa4462372552af8b3e11.jpg"
+    },
+
+    {
+        "Name": "Kai",
+        "Desc": "So many necklace's.",
+        "Song": "0CJ1quCQhVX9Ax2jYwwovA",
+        "img": "https://i.pinimg.com/564x/26/85/0a/26850a0f108ffee8f23b610766140fa0.jpg"
     }
 
 
@@ -724,7 +794,8 @@ let SONGARRAY = [
 
 let AUTHORS = {
     "SetAsync": {
-        "About": "Creator of the site and default 'Author' of all unassigned characters."
+        "About": "Creator of the site and default 'Author' of all unassigned characters.",
+        "SocialLinks": "<p>MY WEBSITE: WWW.SETASYNC.ME</p>"
     },
     "Fambuild": {
         "About": "Got a weird attraction to louis..<br>Fambuild#2364"

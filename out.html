@@ -199,52 +199,53 @@
             color: rgba(255, 255, 255, 0.8);
         }
 
+        .electric-blue-button {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: #03a9f4;
+            color: #fff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+			width: 100%;
+        }
+        
+        .electric-blue-button:hover {
+            background-color: #0396db;
+        }
 </style>
 </head>
 <body>
     <div id="container" class="container">
-        <h1 id="name" onclick="window.location.href = 'index.html'" >Author</h1>
+        <h1 id="name" onclick="window.location.href = 'index.html'" >SmashOrPass - OUT</h1>
         <div class="heading">
             <div class="item-details">
-                <div class="item-name">About Author:</div>
+                <div class="item-name">OUT:</div>
             </div>
         </div>
 		
 		 <div class="belowheading">
             <div class="item-details">
-                <div class="item-description"><p id="about">Lorum ispum erum</p></div>
+                <h2>This site is a very effective way of coming out as:</h2>
+                <img style="width: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/New_Gay_Pride_Flag.svg/2560px-New_Gay_Pride_Flag.svg.png"></img>
+                <h2>(fr)</h2><br><h2>Ty!</h2>
+                <a style="width: 50%;" class="electric-blue-button" href="index.html">Back home</a>
+                <a style="width: 50%;" class="electric-blue-button" href="men.setasync.me/share.html?l=0&s=0&d=4,7,17,18,71&t=Top_Characters">Best men</a>
             </div>
         </div>
 
-        <div class="heading">
-            <div class="item-details">
-                <div class="item-name">Author Details:</div>
-            </div>
         </div>
 		
-		<div class="belowheading">
-            <div class="item-details">
-				<p id="stats"></p>
-                <div id="socialinks"></div>
-            </div>
-        </div>
-		
-        <div class="heading">
-            <div class="item-details">
-                <div class="item-name">Authors Characters:</div>
-            </div>
-        </div>
-
-        <div class="gallery" id="thegallery">
-
-        </div>
     </div>
 	
 	    <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
         
         <div class="wtf-window" id="wtfWindow">
             <span class="close" onclick="toggleWtfWindow()">X</span>
-            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a onclick="window.location.href = 'out.html'">Happy Pride Month!!!!</a></p><a id="rand" href="">Gimme a random man..</a>
+            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a onclick="alert('This is me coming out <3')">Happy Pride Month!!!!</a></p><a id="rand" href="">Gimme a random man..</a>
         </div>
 	
 	<script type="text/javascript" src="DATA.js"></script>
@@ -272,34 +273,7 @@
 			return urlparameter;
 		}
 
-        let AuthorID = getUrlParam("a","SetAsync")
 
-        let Characters = []
-        let I = 0
-        let Added = 0
-        for(let ITEM of ARRAY) {
-            ITEM.Author = ITEM.Author || "SetAsync"
-            if(ITEM.Author==AuthorID) {
-                var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div class="item-text">'+ITEM.Desc+'</div></div>'
-			    document.getElementById("thegallery").insertAdjacentHTML('beforeend', html);
-                Added = Added + 1;
-            }
-            I = I + 1
-        }
-
-        let Author = AUTHORS[AuthorID]
-        document.getElementById("about").innerHTML = Author.About
-		document.getElementById("socialinks").innerHTML = Author.SocialLinks || ""
-        document.getElementById("stats").innerHTML = "<b>Characters Added</b>: "+Added
-        document.getElementById("name").innerHTML = AuthorID
-
-        const databaseItems = document.querySelectorAll('.gallery-item');
-
-        databaseItems.forEach(item => {
-            item.addEventListener('click', () => {
-                window.location.href = "end.html?ID=".concat(parseInt(item.id));
-            });
-        });
     </script>
 </body>
 </html>

@@ -82,14 +82,38 @@
 		  color: #fff;
 		}
 
-
+		.heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #0396db;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
     </style>
 </head>
 <body>
-    <div id="container" class="container">
+    <div class="container">
         <h1 onclick="window.location.href = 'index.html'" >View Database</h1>
 	<a onclick="window.location.href='gallery.html';">Switch to gallery view...</a><br><br>
+    <div class="heading">
+        <div class="item-details">
+            <div class="item-name">New Characters (8):</div>
+        </div>
+    </div>
+    <div id="newcontainer">
 
+    </div>
+    <div class="heading">
+        <div class="item-details">
+            <div id="label" class="item-name">All Characters (8):</div>
+        </div>
+    </div>
+    <div id="container">
+
+    </div>
     </div>
 	<script type="text/javascript" src="DATA.js"></script>
     <script>
@@ -100,6 +124,13 @@
 			I = I + 1
 		}
 	
+		for (let i = 1; i < 9; i++) {
+			let I = ARRAY.length-i
+			let ITEM = ARRAY[I]
+			var html = '<div id="'.concat(parseInt(I)).concat('" class="database-item"><img src="'.concat(ITEM.img).concat('" alt="Item 2" class="item-image"><div class="item-details"><div class="item-name">'.concat(ITEM.Name).concat('</div><div class="item-description">'.concat(ITEM.Desc).concat('</div></div></div>'))))
+			document.getElementById("newcontainer").insertAdjacentHTML('beforeend', html);
+        }
+
         const databaseItems = document.querySelectorAll('.database-item');
         
 		databaseItems.forEach(item => {
@@ -107,6 +138,9 @@
 				window.location.href = "end.html?ID=".concat(parseInt(item.id));
 			});
 		});
+
+		document.getElementById("label").innerHTML = "All Characters ("+ARRAY.length+"):"
+
     </script>
 </body>
 </html>

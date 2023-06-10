@@ -56,6 +56,21 @@
             color: rgba(255, 255, 255, 0.8);
         }
 		
+		.heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #0396db;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .item-details {
+            flex-grow: 1;
+        }
+
 						a {
 		  display: inline-block;
 		  padding: 10px 20px;
@@ -82,6 +97,21 @@
         <h1 onclick="window.location.href='index.html';">Gallery</h1>
 		<a onclick="window.location.href='list.html';">Switch to list view...</a><br><br>
 
+		<div class="heading">
+            <div class="item-details">
+                <div class="item-name">New Characters (8):</div>
+            </div>
+        </div>
+        <div id="newcontainer" class="gallery">
+
+            <!-- Add more gallery items as needed -->
+        </div>
+
+		<br><div class="heading">
+            <div class="item-details">
+                <div id="label" class="item-name">All Characters (100):</div>
+            </div>
+        </div>
         <div id="container" class="gallery">
 
             <!-- Add more gallery items as needed -->
@@ -97,13 +127,22 @@
 			I = I + 1
 		}
 	
-        const databaseItems = document.querySelectorAll('.gallery-item');
         
+		for (let i = 1; i < 9; i++) {
+			let I = ARRAY.length-i
+			let ITEM = ARRAY[I]
+			var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div class="item-text">'+ITEM.Desc+'</div></div>'
+			document.getElementById("newcontainer").insertAdjacentHTML('beforeend', html);
+		}
+        const databaseItems = document.querySelectorAll('.gallery-item');
+
 		databaseItems.forEach(item => {
 			item.addEventListener('click', () => {
 				window.location.href = "end.html?ID=".concat(parseInt(item.id));
 			});
 		});
+
+		document.getElementById("label").innerHTML = "All Characters ("+ARRAY.length+"):"
 	</script>
 </body>
 </html>

@@ -672,7 +672,46 @@ const ARRAY = [
 		"Author": ["Fambuild"],
 		"Famous": true,
 		"Singer": true
-	}
+	},
+
+    {
+        "Name": "Dominik",
+        "Desc": "N23, K488.<br>RIP.",
+        "Song": "0KKE99yOmi67n590TDOWmh",
+        "img": "https://i.pinimg.com/236x/9a/d4/a8/9ad4a84fb27cd9d2f08a8c1e235adf7b.jpg",
+        "DevTop": true
+    },
+
+    {
+        "Name": "Caleb",
+        "Desc": "Accute spidey senses.",
+        "Song": "7DcJ6fEBb7BaKuYKTwiDxK",
+        "img": "https://i.pinimg.com/236x/08/98/7c/08987c44b2a48779de53af40bfb3d569.jpg",
+        "DevTop": true
+    },
+
+    {
+        "Name": "Kyle",
+        "Desc": "Heart Eyes <3",
+        "Song": "3jfZ9M23l0L7RxzYMTgBTv",
+        "img": "https://i.pinimg.com/236x/3b/7f/fd/3b7ffd611af7dc4c873e7279d6d4d9c5.jpg",
+    },
+
+    {
+        "Name": "Matino",
+        "Desc": "Stary Night",
+        "Song": "0aVM2DspPoHNTDBm7ehySx",
+        "img": "https://i.pinimg.com/236x/46/05/4a/46054a398cc485ed69f85063cba7ab2c.jpg"
+    },
+
+    {
+        "Name": "Nick",
+        "Desc": "Hurt",
+        "Song": "2vWBUC9djv6BtiGlmKiQaH",
+        "img": "https://i.pinimg.com/564x/09/40/8a/09408a6b9b239251b5427a7828fcb31c.jpg"
+    }
+
+
 	
 	
 ]

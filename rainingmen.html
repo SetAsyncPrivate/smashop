@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raining Portraits</title>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+
+    .flash {
+      overflow: hidden;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      position: relative;
+    }
+
+    .flash::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ff0000;
+      opacity: 0;
+      animation: flashing 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes flashing {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.05;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .text-box {
+            margin-top: 40px;
+            padding: 20px;
+            border: 4px solid #ff3f63;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 #ff3f63;
+        }
+        
+        .text-box p {
+            color: #fff;
+            font-size: 18px;
+        }
+    .portrait {
+      position: absolute;
+      pointer-events: none;
+      width: 15%; /* Adjust the size as per your preference */
+      height: 45%; /* Adjust the size as per your preference */
+      animation: rain 5s infinite linear;
+    }
+
+        
+		a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+      align-self: center;
+		}
+
+    h2, h3 {
+      color: white;
+    }
+
+		a:hover {
+		  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
+
+    .full-screen-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      font-size: 48px;
+      color: white;
+    }
+
+    @keyframes rain {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+    .gay {
+
+width: 10%;
+position: fixed;
+top: 50%;
+left: 20px;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 18px;
+border-radius: 5px;
+cursor: pointer;
+z-index: 999;
+
+
+}
+
+  </style>
+</head>
+
+<body id="body">
+	<script type="text/javascript" src="profile.js"></script>
+
+  <script type="text/javascript" src="DATA.js"></script>
+  <div id="pre">
+    <div class="text-box">
+      <h3>Click start to begin...</h3>
+		
+      <img onclick="window.location.href = 'out.html';" class="gay" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/New_Gay_Pride_Flag.svg/2560px-New_Gay_Pride_Flag.svg.png">
+      <a onclick="rainForever()" class="play-button">Start</a>
+      <a onclick="window.location.href = 'index.html';" class="play-button">Back</a>
+    </div>
+  </div>
+
+  <script>
+    let audioElement = false
+    function sound() {
+        audioElement = new Audio("rainingmen.mp3");
+        audioElement.play();
+
+    }
+    function createPortrait() {
+
+      let LocalI = Math.floor(Math.random() * ((ARRAY.length)- 0) ) + 0;
+			let LocalV = ARRAY[LocalI]
+
+      var portrait = document.createElement('img');
+      portrait.hidden = true;
+      portrait.src = LocalV.img;
+      portrait.className = 'portrait';
+      portrait.style.left = Math.random() * 100 + 'vw';
+      portrait.style.animationDelay = 0;
+      //portrait.style.animationDelay = Math.random() * 5 + 's'; // Random delay before animation starts
+
+      document.body.appendChild(portrait);
+      setTimeout(function() {
+        portrait.hidden = false;
+      }, 0)
+      setTimeout(function() {
+          portrait.remove()
+      }, 15000)
+    }
+
+    // Function to continuously create new portraits
+    function rainForever() {
+      sound();
+      setInterval(createPortrait, 500);
+      document.getElementById("pre").remove()
+      document.getElementById("body").className = "flash"
+    }
+
+  </script>
+</body>
+</html>

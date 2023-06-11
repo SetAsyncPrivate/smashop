@@ -779,11 +779,51 @@ const ARRAY = [
         "Desc": "So many necklace's.",
         "Song": "0CJ1quCQhVX9Ax2jYwwovA",
         "img": "https://i.pinimg.com/564x/26/85/0a/26850a0f108ffee8f23b610766140fa0.jpg"
-    }
+    },
 
+    {
+        "Name": "Liam Payne",
+        "Desc": "English singer",
+        "Song": "4Ro98RCK90oHqqSZUnTFq5",
+        "img": "https://i.pinimg.com/564x/f6/fd/53/f6fd53f5fe278b8fb5aba604656755b2.jpg",
+        "Author": "Fambuild",
+        "Singer": true
+    },
 
+    {
+        "Name": "Niall Horan",
+        "Desc": "Singer",
+        "Song": "1yHVHoz6Ny29gbbWJYVnFt",
+        "img": "https://i.pinimg.com/236x/2c/18/3b/2c183b6a831c9904d1cde711ed907ab4.jpg",
+        "Author": "Fambuild",
+        "Singer": true
+    },
+
+    {
+        "Name": "Harry Styles",
+        "Desc": "Singer",
+        "Singer": true,
+        "Song": "6UelLqGlWMcVH1E5c4H7lY",
+        "img": "https://i.pinimg.com/236x/63/5c/7b/635c7bef401d5509ecf6662249818219.jpg",
+        "Author": "Fambuild",
+        "Famous": true
+    },
 	
-	
+    {
+        "Name": "Zayn",
+        "Desc": "Idk who this is",
+        "Song": "0rzaRSujxA0bKyjJl6vHYq",
+        "img": "https://i.pinimg.com/236x/96/b2/b1/96b2b12cec3a3222b2197aedbdf1fd9c.jpg",
+        "Author": "Fambuild"
+    },
+
+    {
+        "Name": "Sangheon lee",
+        "Desc": "From XO Kitty.",
+        "Song": "0o9zmvc5f3EFApU52PPIyW",
+        "img": "https://i.pinimg.com/564x/bc/12/30/bc1230f4b3bf7418a13918afe0afaa58.jpg",
+        "Author": "Fambuild"
+    },
 ]
 
 let SONGARRAY = [

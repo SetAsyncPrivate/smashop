@@ -789,7 +789,8 @@ const ARRAY = [
 let SONGARRAY = [
 ["Lana Del Rey - Peppers","peppers.mp3"],
 ["Streets - Doja Cat","streets.mp3"],
-["Babydoll - Ari", "babydoll.mp3"]
+["Babydoll - Ari", "babydoll.mp3"],
+["Raining Men - Weather Girls", "rainingmen.mp3"]
 ]
 
 let AUTHORS = {
@@ -804,3 +805,17 @@ let AUTHORS = {
         "About": "Pancake#8026"
     }
 }
+
+// Mobile Handler
+
+function CheckOrientation() {
+    console.log(window.orientation);
+    if (window.orientation === 0 || window.orientation === 180) {
+        let PAGENAME = window.location.href.split("/")
+		PAGENAME = PAGENAME[PAGENAME.length-1]
+		window.location.href = "error.html?redirect="+PAGENAME;
+    }
+}
+
+window.addEventListener("orientationchange", CheckOrientation);
+CheckOrientation();

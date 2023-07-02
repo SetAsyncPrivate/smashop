@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Author</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        .database-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #ff3f63;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .database-item:hover {
+            background-color: #ff6183;
+					  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+        }
+        
+        .item-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        
+        .item-details {
+            flex-grow: 1;
+        }
+        
+        .item-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .item-description {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+		
+		.heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #0396db;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+		
+		.belowheading {
+		    display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #ff3f63;
+            border-radius: 10px;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+		}
+		        .wtf-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff3f63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+        }
+        
+        .wtf-window {
+            position: fixed;
+            bottom: -300px;
+            right: 20px;
+            width: 300px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border: 2px solid #ff3f63;
+            border-radius: 5px;
+            z-index: 998;
+            transition: bottom 0.3s ease;
+        }
+        
+        .wtf-window.open {
+            bottom: 100px;
+        }
+        
+        .wtf-window .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+		
+				a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		a:hover {
+		  background-color: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+		  color: #fff;
+		}
+		
+		.aa	{
+		  background-color: #0396db;
+		  color: #fff;
+		}
+
+        .item-details {
+            flex-grow: 1;
+        }
+
+						a {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #ff3f63;
+		  color: #fff;
+		  font-size: 18px;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  border: none;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+        .gallery-item:hover {
+            background-color: #ff6183;
+					  background-image: linear-gradient(to right, #078D70, #26CEAA, #98E8C1, #FFFFFF, #7BADE2, #5049CC, #3D1A78);
+        }
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+		}
+
+		.gallery-item {
+			background-color: #ff3f63;
+			border-radius: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.item-image {
+			width: 100%;
+			height: 400px; /* Adjust the height as needed */
+			object-fit: cover;
+			object-position: top;
+		}
+
+        .item-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .item-text {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+</style>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1 id="name" onclick="window.location.href = 'index.html'" >Badge - "Singer"</h1>
+        <div class="heading">
+            <div class="item-details">
+                <div class="item-name">Badge Details:</div>
+            </div>
+        </div>
+		
+		 <div class="belowheading">
+            <div class="item-details">
+                <div class="item-description"><p id="about">Lorum ispum erum</p></div>
+            </div>
+        </div>
+		
+        <div class="heading">
+            <div class="item-details">
+                <div class="item-name">Characters with Badge:</div>
+            </div>
+        </div>
+
+        <div class="gallery" id="thegallery">
+
+        </div>
+    </div>
+	
+	    <button class="wtf-button" onclick="toggleWtfWindow()">WTF??</button>
+        
+        <div class="wtf-window" id="wtfWindow">
+            <span class="close" onclick="toggleWtfWindow()">X</span>
+            <p>The pictures in this site were inserted manually, their host links stored. No pictures on this site are hosted or owned by the site.<br><br><a onclick="window.location.href = 'out.html'">Happy Pride Month!!!!</a></p><a id="rand" href="">Gimme a random man..</a>
+        </div>
+	
+	<script type="text/javascript" src="DATA.js"></script>
+	<script type="text/javascript" src="profile.js"></script>
+    <script>
+		
+		function toggleWtfWindow() {
+            var wtfWindow = document.getElementById("wtfWindow");
+            wtfWindow.classList.toggle("open");
+        }
+
+        function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+	
+		function getUrlParam(parameter, defaultvalue){
+			var urlparameter = defaultvalue;
+			if(window.location.href.indexOf(parameter) > -1){
+				urlparameter = getUrlVars()[parameter];
+			}
+			return urlparameter;
+		}
+
+        let BadgeID = getUrlParam("id","Singer")
+        BadgeID = BadgeID.replace("_"," ")
+
+        let Characters = []
+        let I = 0
+        let Added = 0
+
+        for(let ITEM of ARRAY) {
+            Object.entries(ITEM).forEach(([k,v]) => {
+                if(k==BadgeID) {
+                    var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div class="item-text">'+ITEM.Desc+'</div></div>'
+			        document.getElementById("thegallery").insertAdjacentHTML('beforeend', html);
+                }
+            })
+            I = I + 1
+        }
+        document.getElementById("name").innerHTML = "Badge - '"+BadgeID+"'"
+
+        let Badge = BADGES[BadgeID]
+        document.getElementById("about").innerHTML = Badge || "No description provided for this badge."
+
+        const databaseItems = document.querySelectorAll('.gallery-item');
+
+        databaseItems.forEach(item => {
+            item.addEventListener('click', () => {
+                window.location.href = "end.html?ID=".concat(parseInt(item.id));
+            });
+        });
+    </script>
+</body>
+</html>

@@ -122,7 +122,7 @@ const ARRAY = [
 		"DevTop": true,
 		"Famous": true,
 		"Model": true,
-		"Posts": [23,22,21,20,18],
+		"Gallery Model": [23,22,21,20,18],
 		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
@@ -138,7 +138,7 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/67/85/34/678534f3340ec2a9428ee3759b5db923.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18],
+		"Gallery Model": [23,22,21,20,18],
 		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
@@ -148,7 +148,7 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/8f/56/79/8f5679c549c7dc7fcedc9f1756127edf.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18],
+		"Gallery Model": [23,22,21,20,18],
 		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
@@ -158,7 +158,7 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/2c/76/1c/2c761c25cd132e9b6dbed640d1312597.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18],
+		"Gallery Model": [23,22,21,20,18],
 		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
@@ -168,7 +168,7 @@ const ARRAY = [
         "img": "https://i.pinimg.com/236x/b1/47/f5/b147f5881552c531c0e0ea2e54ebb858.jpg",
 		"DevTop": true,
 		"Famous": true,
-		"Posts": [23,22,21,20,18],
+		"Gallery Model": [23,22,21,20,18],
 		"SocialLinks": "<a href='https://twitter.com/BenjiKrol'>Twitter</a> <a href='https://www.instagram.com/benjikrol/'>Instagram</a> <a href='https://www.tiktok.com/@benjikrol'>TikTok</a> <a href='https://www.youtube.com/channel/UCTiRzu_j0baxb0HPPEMVspg'>YouTube</a>"
     },
     {
@@ -605,7 +605,7 @@ const ARRAY = [
 		"Song": "5QGhOS4dpiSdcwuqnWzpxE",
 		"img": "https://i.pinimg.com/236x/d0/cb/e2/d0cbe2c1c23f76ee9f19a345a23c492d.jpg",
 		"Famous": true,
-		"Posts": [94],
+		"Gallery Model": [94],
 		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
 		"Singer": true,
 				"DevTop": true
@@ -619,7 +619,7 @@ const ARRAY = [
 		"Famous": true,
 		"Actor": true,
 		"SocialLinks": "<a href='https://www.instagram.com/manurios/'>Instagram</a>",
-        "Posts": [102]
+        "Gallery Model": [102]
 	},
 	
 	{
@@ -648,7 +648,7 @@ const ARRAY = [
 		"Desc": "Eurovision 2023 Contestant.",
 		"Song": "0vbp3qthXlRVsLXTbPrkX1",
 		"img": "https://i.pinimg.com/564x/d9/77/23/d977230d4d16eea1fa14d674eb24b909.jpg",
-		"Posts": [89],
+		"Gallery Model": [89],
 		"Famous": true,
 		"SocialLinks": "<a href='https://www.instagram.com/jann_music_/?hl=en'>Instagram</a>",
 		"Singer": true,
@@ -720,7 +720,7 @@ const ARRAY = [
 		"Famous": true,
 		"Actor": true,
 		"SocialLinks": "<a href='https://www.instagram.com/manurios/'>Instagram</a>",
-        "Posts": [90]
+        "Gallery Model": [90]
     },
 
     {
@@ -832,6 +832,14 @@ let SONGARRAY = [
 ["Babydoll - Ari", "babydoll.mp3"],
 ["Raining Men - Weather Girls", "rainingmen.mp3"]
 ]
+
+let BADGES_KEYS = ["Singer"]
+let BADGES = {
+    "Singer": "This badge is provided to characters who are singers.",
+    "Famous": "This badge is provided to characters who are well known.",
+    "Gallery Model": "This badge is provided to characters who have more than one picture on the gallery.",
+    "DevTop": "This badge is provided to the best"
+}
 
 let AUTHORS = {
     "SetAsync": {

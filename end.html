@@ -165,7 +165,7 @@
             <div class="profile-text">
                 <h1 id="hisname" style="text-align: left;" class="profile-name">Loading...</h1>
                 <p id="abouthim" class="profile-description">Loading...</p><b>His favorite song:</p>
-				<iframe id="song" style="border-radius:12px" src="https://open.spotify.com/embed/track/7DbdUf8aHSYoliSjO6LZv6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<iframe id="song" style="border-radius:12px" src="https://open.spotify.com/embed/track/7kgvwGbyXl2xnv7LwyLNIX?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 				<p>After 15 different choices and options, you've made this choice!<br>Are they worth it?</p>
 				<a href="index.html" class="play-again-button">Back Home</a>
 				<a href="smashorpass.html" class="play-again-button">Play again.</a>
@@ -176,7 +176,6 @@
         <div id="additional" class="additional-info">
             <h2 id="hisname2">Loading</h2>
 			<p>- Badges:</p>
-			<div class='badge'>Beta Character</div>
         </div>
 		<div id="Pictures" class="additional-info">
 			<h2 id="hisname2">More pictures of character:</h2>
@@ -237,35 +236,40 @@
 			let HTML = "<div onclick='window.location.href=\""+AuthorURL+"\"' class='badge'>Added by "+LocalAuthor+"</div>"
 			document.getElementById("additional").insertAdjacentHTML('beforeend', HTML);
 			// METAINFO
+
+
+
 			Object.entries(GUY).forEach(([k,v]) => {
 
+
+				let BadgeView = "badge.html?id="
 				
 				if(k == "Famous") {
-					let html = "<div style='background-color: #A7C7E7;' class='badge'>Public Figure</div>"
+					let html = "<div onclick=\"BadgeClick('Famous')\" style='background-color: #A7C7E7;' class='badge'>Famous</div>"
 					document.getElementById("additional").insertAdjacentHTML('beforeend', html);
 				}
 				
 				if(k== "DevTop") {
-					let html = "<div style='background-color: #FF10F0;' class='badge'>Developer's Favorite</div>"
+					let html = "<div onclick=\"BadgeClick('DevTop')\" style='background-color: #FF10F0;' class='badge'>Developer's Favorite</div>"
 					document.getElementById("additional").insertAdjacentHTML('beforeend', html);
 				}
 				
-				if(k=="Posts") {
-					let html = "<div style='background-color: #800080;' class='badge'>Gallery Model</div>"
+				if(k=="Gallery Model") {
+					let html = "<div onclick=\"BadgeClick('Gallery Model')\" style='background-color: #800080;' class='badge'>Gallery Model</div>"
 					document.getElementById("additional").insertAdjacentHTML('beforeend', html);				
 				}
 				
 				if(k=="Actor") {
-					let html = "<div style='background-color: #800080;' class='badge'>Actor</div>"
+					let html = "<div onclick=\"BadgeClick('Actor')\" style='background-color: #800080;' class='badge'>Actor</div>"
 					document.getElementById("additional").insertAdjacentHTML('beforeend', html);				
 				}
 				
 				if(k== "Singer") {
-					let html = "<div style='background-color: #FF10F0;' class='badge'>Singer</div>"
+					let html = "<div onclick=\"BadgeClick('Singer')\" style='background-color: #FF10F0;' class='badge'>Singer</div>"
 					document.getElementById("additional").insertAdjacentHTML('beforeend', html);
 				}
 			})
-			
+
 			let GalleryFrame = document.getElementById("Pictures")
 			// EXTRA PICS
 			if(GUY.Posts) {
@@ -325,7 +329,12 @@
 		} else {
 			document.getElementById("save").innerHTML = "REMOVE RESULT FROM YOUR SAVED"
 		}
-		
+		function BadgeClick(BadgeID) {
+			let Encoded = BadgeID.replace(" ","_")
+			let URL = "badge.html?id="+Encoded
+
+			window.location.href = URL;
+		}
 
 </script>
 </body>

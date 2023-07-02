@@ -248,10 +248,11 @@
 			
 			if(ROUND==Profile.Rounds) {
 				let Husband = CURRENTS[LOCALID]
-				window.location.href = "end.html?ID=".concat(Husband);
 				Profile.Score = Profile.Score + 1
 				Profile.LastSave = Husband
-				localStorage.setItem("Profile", JSON.stringify(Profile))
+				localStorage.setItem("Profile_2", JSON.stringify(Profile))
+
+                window.location.href = "end.html?ID=".concat(Husband);
 				return
 			}
 			

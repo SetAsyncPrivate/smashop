@@ -596,7 +596,7 @@ const ARRAY = [
 		"Desc": "Japanese musician and singer-songwriter of the band Buck-Tick",
 		"Song": "1f6sBdxffdtzsYwJTeHWr1",
 		"img": "https://i.pinimg.com/474x/0a/a2/61/0aa26144f2fa22e92c5c8fcbb78cf2f6.jpg",
-		"Author": ["Pancake", "https://setasyncprivate.github.io/smashop/share.html?l=0&s=0&d=77,78,79,80,81,82,83,84,85,86,87,88&t=Pancakes_Men"]
+		"Author": "Pancake"
 	},
 	
 	{

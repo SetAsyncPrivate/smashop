@@ -272,8 +272,8 @@
 
 			let GalleryFrame = document.getElementById("Pictures")
 			// EXTRA PICS
-			if(GUY.Posts) {
-				for(let I of GUY.Posts) {
+			if(GUY["Gallery Model"]) {
+				for(let I of GUY["Gallery Model"]) {
 					ITEM = ARRAY[I]
 					var html = '<div id="'+I+'" class="gallery-item"><img src="'+ITEM.img+'" alt="Image 1" class="item-image"><div class="item-title">'+ITEM.Name+'</div><div style="color: #ff3f63;" class="item-text">'+ITEM.Desc+'</div></div>'
 					document.getElementById("grid").insertAdjacentHTML('beforeend', html);

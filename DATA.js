@@ -496,7 +496,13 @@ const ARRAY = [
 		"Name": "Mr Adnan",
 		"Desc": "Very wise man, and someone's dad.\n<br><a href='https://youtu.be/iYSNYKLgwR8'>His other song</a>",
 		"Song": "0cGG2EouYCEEC3xfa0tDFV",
-		"img": "https://cdn.discordapp.com/attachments/723089422530117632/1115419762260983890/Screenshot_20230606_001925_Photos.jpg"
+		"img": "https://cdn.discordapp.com/attachments/723089422530117632/1115419762260983890/Screenshot_20230606_001925_Photos.jpg",
+        "Hunnains Dad": true,
+        "DevTop": true,
+        "Gallery Model": [],
+        "Singer": true,
+        "Actor": true,
+        "Famous": true
 	},
 	
 	// Am's Contribution
@@ -838,7 +844,8 @@ let BADGES = {
     "Singer": "This badge is provided to characters who are singers.",
     "Famous": "This badge is provided to characters who are well known.",
     "Gallery Model": "This badge is provided to characters who have more than one picture on the gallery.",
-    "DevTop": "This badge is provided to the best"
+    "DevTop": "This badge is provided to the best",
+    "Hunnains Dad": "This badge is given to men who are Hunnains Dad.."
 }
 
 let AUTHORS = {

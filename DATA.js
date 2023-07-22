@@ -255,7 +255,7 @@ const ARRAY = [
     {
         "Name": "Oliver",
         "Desc": "wow<br>'Under love's heavy burden do I sink'<br>Amazing",
-        "Song": "6Dy1jexKYriXAVG6evyUTJ",
+        "Song": "5VxmI3IdgAxWVvUnJoLuY2",
         "img": "https://i.pinimg.com/236x/ac/60/0e/ac600ec3405240b465af707a21443dea.jpg",
 		"DevTop": true
     },
@@ -830,6 +830,22 @@ const ARRAY = [
         "img": "https://i.pinimg.com/564x/bc/12/30/bc1230f4b3bf7418a13918afe0afaa58.jpg",
         "Author": "Fambuild"
     },
+
+    {
+        "Name": "Tony",
+        "Desc": "What's he hiding..",
+        "Song": "3bNv3VuUOKgrf5hu3YcuRo",
+        "img": "https://i.pinimg.com/564x/33/34/3f/33343fa28a327d2280df370ba0b9df5c.jpg",
+        "Author": "SetAsync"
+    },
+
+    {
+        "Name": "Nate",
+        "Desc": "\"You're so beautiful\"",
+        "img": "https://i.pinimg.com/564x/eb/21/f6/eb21f6c5c5f7a3f1091497db4a39de34.jpg",
+        "Song": "6wf7Yu7cxBSPrRlWeSeK0Q",
+        "Author": "SetAsync"
+    }
 ]
 
 let SONGARRAY = [
